@@ -23,5 +23,8 @@ gulp.task("sass", function () {
 
 function watchFunction() {
   // PATH FOR WATCH
-  gulp.watch("sass/bootstrap/**/*.scss", gulp.series(["sass"]));
+  gulp.watch(
+    ["sass/bootstrap/**/*.scss", "sass/scss/custom.scss"],
+    gulp.series(["sass"])
+  );
 }
