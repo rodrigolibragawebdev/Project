@@ -1,48 +1,174 @@
+
+
+
+/* FONTS */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts/Montserrat/Montserrat-LightItalic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Montserrat/Montserrat-BoldItalic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Nunito_Sans/NunitoSans-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Nunito_Sans/NunitoSans-Italic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Nunito_Sans/NunitoSans-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Nunito_Sans/NunitoSans-BoldItalic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Noto_Sans/NotoSans-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Noto_Sans/NotoSans-Italic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Noto_Sans/NotoSans-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Noto_Sans/NotoSans-BoldItalic.ttf') format('truetype');
+  }
+
 .container {
-  background-color: #e7e7e7;
-  border-radius: 10px;
-  color: black;
+    background-color:#E7E7E7; 
+    border-radius: 10px;
+    color: black;
 }
 
 .color {
-  background-color: aquamarine;
-  border-radius: 10px;
-  /* margin: 5px 5px; */
+    background-color: aquamarine;
+    border-radius: 10px;
+    /* margin: 5px 5px; */
 }
 
+
 .title {
-  font-size: 40px;
-  color: darkred;
+    font-size: 40px;
+    color:darkred; 
 }
 
 .subtitle {
-  font-size: 25px;
-  color: darkred;
+    font-size: 25px;
+    color:darkred; 
 }
 
 .block-colors {
-  font-size: 12px;
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
+    font-size: 12px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;   
 }
 
 .information {
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.brand-logo {
-  width: 100%;
+header {
+    padding-bottom: 30px;
 }
 
-.brand-link {
-  width: 15%;
+html {
+    font-size: 16px;
 }
 
-@media (max-width: 965px) {
-  .brand-link {
-    width: 150px;
-  }
+p {
+    font-family: "Nunito Sans", sans-serif !important;
+}
+
+.btn-custom-outline{
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.icon-16 {
+  width: 16px !important;
+  height: auto;
 }
