@@ -10,21 +10,34 @@ gulp.task("default", watchFunction);
 
 gulp.task("watch", watchFunction);
 
-gulp.task("sass", function () {
+gulp.task("bootstrap-sass", function () {
   //COMPILE THIS
   return (
     gulp
-      .src("sass/scss/custom.scss")
+      .src("src/sass/bootstrap/theming_bootstrap.scss")
       .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
       // SAVE IN
-      .pipe(gulp.dest("sass/scss/"))
+      .pipe(gulp.dest("src/sass/bootstrap"))
+  );
+});
+
+gulp.task("pages-sass", function () {
+  //COMPILE THIS
+  return (
+    gulp
+      .src("src/sass/pages_sass/*.scss")
+      .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+      // SAVE IN
+      .pipe(gulp.dest("src/sass/pages_css"))
   );
 });
 
 function watchFunction() {
   // PATH FOR WATCH
   gulp.watch(
-    ["sass/bootstrap/**/*.scss", "sass/scss/custom.scss"],
-    gulp.series(["sass"])
+    ["src/sass/bootstrap/**/*.scss", "src/sass/custom_sass/**/*.scss", "src/sass/pages_sass/**/*.scss"],
+    gulp.series(["bootstrap-sass", "pages-sass"])
   );
 }
+
+

@@ -1,0 +1,113 @@
+.container {
+    background-color:#E7E7E7; 
+    border-radius: 10px;
+    color: black;
+}
+
+.color {
+    background-color: aquamarine;
+    border-radius: 10px;
+    /* margin: 5px 5px; */
+}
+
+.title {
+    font-size: 40px;
+    color:darkred; 
+}
+
+.subtitle {
+    font-size: 25px;
+    color:darkred; 
+}
+
+.block-colors {
+    font-size: 12px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;   
+}
+
+.information {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+header {
+    padding-bottom: 30px;
+}
+
+html {
+    font-size: 16px;
+    outline: 0;
+}
+
+p {
+    font-family: "Nunito Sans", sans-serif !important;
+}
+
+.btn-custom-outline{
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.icon-16 {
+  width: 16px !important;
+  height: auto;
+}
+.dark{
+    background-color: $dark;
+}
+
+.midnight{
+    background-color: $midnight;
+}
+
+.gray {
+    background-color: $gray;
+}
+
+.cool-gray{
+    background-color: $cool-gray;
+}
+
+.light-gray{
+    background-color: $light-gray;
+}
+
+.pb-blue{
+    background-color: $pb-blue;
+}
+
+.dark-blue{
+    background-color: $dark-blue;
+}
+
+.cool-blue {
+    background-color: $cool-blue;
+}
+
+.violet{
+    background-color: $violet;
+}
+
+.white{
+    background-color: $white-custom;
+}
+
+.pb-green {
+    background-color: $pb-green;
+}
+
+.dark-green {
+    background-color: $dark-green;
+}
+
+.error {
+    background-color: $error;
+}
+
+.bg-alert {
+    background-color: $alert;
+}

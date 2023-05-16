@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="sass/scss/custom.css" />    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/sass/custom_css/normalize.css" />
+    <link rel="stylesheet" href="src/sass/custom_css/fonts.css" />
+    <link rel="stylesheet" href="src/sass/custom_css/custom.css" />
+    <link rel="stylesheet" href="src/sass/bootstrap/theming_bootstrap.css" />
     <script
       defer
       loading="lazy"
@@ -74,69 +77,145 @@
 
     <div class="flex-column d-flex d-column align-items-center">
       <section class="container m-4 p-4 text-start">
+        <p class="subtitle">Custom Colors</p>
         <div
-          class="row gap-2 text-center d-flex justify-content-center align-items-center"
+          class="gap-2 text-center d-flex justify-content-center align-items-center flex-wrap"
         >
           <!-- content here -->
 
           <div
-            class="d-flex align-items-center justify-content-center block-colors bg-primary text-white"
+            class="dark d-flex align-items-center justify-content-center block-colors text-white"
           >
-            .bg-primary
+            $dark
           </div>
           <div
-            class="d-flex align-items-center justify-content-center block-colors bg-secondary text-white"
+            class="midnight d-flex align-items-center justify-content-center block-colors text-white"
           >
-            .bg-secondary
+            $midnight
           </div>
           <div
-            class="d-flex align-items-center justify-content-center block-colors bg-success text-white"
+            class="gray d-flex align-items-center justify-content-center block-colors text-white"
           >
-            .bg-success
+            $gray
           </div>
           <div
-            class="d-flex align-items-center justify-content-center block-colors bg-danger text-white"
+            class="cool-gray d-flex align-items-center justify-content-center block-colors  text-black"
           >
-            .bg-danger
+            $cool-gray
           </div>
           <div
-            class="d-flex align-items-center justify-content-center block-colors bg-warning text-dark"
+            class="pb-blue d-flex align-items-center justify-content-center block-colors text-light"
           >
-            .bg-warning
+            $pb-blue
           </div>
           <div
-            class="d-flex align-items-center justify-content-center block-colors bg-info text-dark"
+            class="dark-blue d-flex align-items-center justify-content-center block-colors  text-light"
           >
-            .bg-info
+            $drak-blue
           </div>
           <div
-            class="d-flex align-items-center justify-content-center block-colors bg-light text-dark"
+            class="cool-blue d-flex align-items-center justify-content-center block-colors text-dark"
           >
-            .bg-light
+            $cool-blue
           </div>
           <div
-            class="d-flex align-items-center justify-content-center block-colors bg-dark text-white"
+            class="violet d-flex align-items-center justify-content-center block-colors text-light"
           >
-            .bg-dark
+            $violet
           </div>
           <div
-            class="d-flex align-items-center justify-content-center block-colors bg-body text-dark"
+            class="white d-flex align-items-center justify-content-center block-colors  text-dark"
           >
-            .bg-body
+           $white
           </div>
           <div
-            class="d-flex align-items-center justify-content-center block-colors bg-white text-dark"
+            class="pb-green d-flex align-items-center justify-content-center block-colors  text-light"
           >
-            .bg-white
+            $pb-green
           </div>
           <div
-            class="d-flex align-items-center justify-content-center block-colors bg-transparent text-dark"
-          >
-            .bg-transparent
-          </div>
+          class="dark-green d-flex align-items-center justify-content-center block-colors  text-light"
+        >
+          $dark-green
+        </div>
+        <div
+        class="error d-flex align-items-center justify-content-center block-colors  text-light"
+      >
+       $error
+      </div>
+      <div
+      class="bg-alert d-flex align-items-center justify-content-center block-colors  text-light"
+    >
+      $alert
+    </div>
         </div>
 
         <hr class="m-5" />
+
+        <p class="subtitle">Theme Colors</p>
+        <div
+        class="gap-2 text-center d-flex justify-content-center align-items-center flex-wrap"
+      >
+        <!-- content here -->
+
+        <div
+          class="d-flex align-items-center justify-content-center block-colors bg-primary text-white"
+        >
+          .bg-primary
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center block-colors bg-secondary text-white"
+        >
+          .bg-secondary
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center block-colors bg-success text-white"
+        >
+          .bg-success
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center block-colors bg-danger text-white"
+        >
+          .bg-danger
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center block-colors bg-warning text-dark"
+        >
+          .bg-warning
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center block-colors bg-info text-dark"
+        >
+          .bg-info
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center block-colors bg-light text-dark"
+        >
+          .bg-light
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center block-colors bg-dark text-white"
+        >
+          .bg-dark
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center block-colors bg-body text-dark"
+        >
+          .bg-body
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center block-colors bg-white text-dark"
+        >
+          .bg-white
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center block-colors bg-transparent text-dark"
+        >
+          .bg-transparent
+        </div>
+      </div>
+
+      <hr class="m-5" />
 
         <div
           class="row g-2 text-center d-flex justify-content-center align-items-center gx-2"
