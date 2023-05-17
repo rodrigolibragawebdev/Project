@@ -1,23 +1,25 @@
 .container {
-    background-color:#E7E7E7; 
+    background-color: $gray-200; 
     border-radius: 10px;
     color: black;
 }
 
 .color {
-    background-color: aquamarine;
+    background-color: transparent;
+    border: 1px solid $dark;
+    height: 50px;
     border-radius: 10px;
     /* margin: 5px 5px; */
 }
 
 .title {
     font-size: 40px;
-    color:darkred; 
+    font-weight: 700;
 }
 
 .subtitle {
     font-size: 25px;
-    color:darkred; 
+    font-weight: 600;
 }
 
 .block-colors {
@@ -40,6 +42,10 @@ header {
 html {
     font-size: 16px;
     outline: 0;
+}
+
+main{
+    min-height: 100vh;
 }
 
 p {
@@ -66,6 +72,10 @@ p {
 
 .gray {
     background-color: $gray;
+}
+
+.medium-gray {
+    background-color: $medium-gray;
 }
 
 .cool-gray{
@@ -111,3 +121,48 @@ p {
 .bg-alert {
     background-color: $alert;
 }
+
+.gray-white{
+    background-color: $white-custom;
+}
+
+.gray-100{
+    background-color: $gray-100;
+}
+
+.gray-200{
+    background-color: $gray-200;
+}
+
+.gray-300{
+    background-color: $gray-300;
+}
+
+.gray-400{
+    background-color: $gray-400;
+}
+
+.gray-500{
+    background-color: $gray-500;
+}
+
+.gray-600{
+    background-color: $gray-600;
+}
+
+.gray-700{
+    background-color: $gray-700;
+}
+
+.gray-800{
+    background-color: $gray-800;
+}
+
+.gray-900{
+    background-color: $gray-900;
+}
+
+.gray-dark{
+    background-color: $black;
+}
+

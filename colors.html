@@ -1,225 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="src/sass/custom_css/normalize.css" />
-    <link rel="stylesheet" href="src/sass/custom_css/fonts.css" />
-    <link rel="stylesheet" href="src/sass/custom_css/custom.css" />
-    <link rel="stylesheet" href="src/sass/bootstrap/theming_bootstrap.css" />
-    <script
-      defer
-      loading="lazy"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <header class="mb-5">
-      <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-primary">
-        <nav class="navbar fixed-top navbar-expand-lg bg-light">
-          <div class="container-fluid">
-            <a class="brand-link navbar-brand d-flex" href="#">
-              <img
-                class="brand-logo"
-                src="assets/logo-pagbrasil-color-v3.svg"
-                alt="Logo PagBrasil"
-              />
-            </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="elements.html">Elementos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="grid.html">Grid</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="display.html">Display</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="colors.html">Colors</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="form.html">Form</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="images.html">Images</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="base.html">Base</a>
-              </li>
-              <li class="nav-item dropdown"></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="src/sass/custom_css/normalize.css" />
+  <link rel="stylesheet" href="src/sass/custom_css/fonts.css" />
+  <link rel="stylesheet" href="src/sass/custom_css/custom.css" />
+  <link rel="stylesheet" href="src/sass/bootstrap/theming_bootstrap.css" />
+  <script defer loading="lazy" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header></header>
+
+  <main>
 
     <div class="flex-column d-flex d-column align-items-center">
       <section class="container m-4 p-4 text-start">
-        <p class="subtitle">Custom Colors</p>
-        <div
-          class="gap-2 text-center d-flex justify-content-center align-items-center flex-wrap"
-        >
+
+        <p class="subtitle">Custom Colors</p><br />
+
+        <div class="gap-2 text-center d-flex justify-content-center align-items-center flex-wrap">
           <!-- content here -->
 
-          <div
-            class="dark d-flex align-items-center justify-content-center block-colors text-white"
-          >
+          <div class="dark d-flex align-items-center justify-content-center block-colors text-white">
             $dark
           </div>
-          <div
-            class="midnight d-flex align-items-center justify-content-center block-colors text-white"
-          >
+          <div class="midnight d-flex align-items-center justify-content-center block-colors text-white">
             $midnight
           </div>
-          <div
-            class="gray d-flex align-items-center justify-content-center block-colors text-white"
-          >
+          <div class="gray d-flex align-items-center justify-content-center block-colors text-white">
             $gray
           </div>
-          <div
-            class="cool-gray d-flex align-items-center justify-content-center block-colors  text-black"
-          >
+          <div class="medium-gray d-flex align-items-center justify-content-center block-colors text-white">
+            $medium-gray
+          </div>
+          <div class="cool-gray d-flex align-items-center justify-content-center block-colors  text-black">
             $cool-gray
           </div>
-          <div
-            class="pb-blue d-flex align-items-center justify-content-center block-colors text-light"
-          >
+          <div class="pb-blue d-flex align-items-center justify-content-center block-colors text-light">
             $pb-blue
           </div>
-          <div
-            class="dark-blue d-flex align-items-center justify-content-center block-colors  text-light"
-          >
+          <div class="dark-blue d-flex align-items-center justify-content-center block-colors  text-light">
             $drak-blue
           </div>
-          <div
-            class="cool-blue d-flex align-items-center justify-content-center block-colors text-dark"
-          >
+          <div class="cool-blue d-flex align-items-center justify-content-center block-colors text-dark">
             $cool-blue
           </div>
-          <div
-            class="violet d-flex align-items-center justify-content-center block-colors text-light"
-          >
+          <div class="violet d-flex align-items-center justify-content-center block-colors text-light">
             $violet
           </div>
-          <div
-            class="white d-flex align-items-center justify-content-center block-colors  text-dark"
-          >
-           $white
+          <div class="white d-flex align-items-center justify-content-center block-colors  text-dark">
+            $white
           </div>
-          <div
-            class="pb-green d-flex align-items-center justify-content-center block-colors  text-light"
-          >
+          <div class="pb-green d-flex align-items-center justify-content-center block-colors  text-light">
             $pb-green
           </div>
-          <div
-          class="dark-green d-flex align-items-center justify-content-center block-colors  text-light"
-        >
-          $dark-green
-        </div>
-        <div
-        class="error d-flex align-items-center justify-content-center block-colors  text-light"
-      >
-       $error
-      </div>
-      <div
-      class="bg-alert d-flex align-items-center justify-content-center block-colors  text-light"
-    >
-      $alert
-    </div>
+          <div class="dark-green d-flex align-items-center justify-content-center block-colors  text-light">
+            $dark-green
+          </div>
+          <div class="error d-flex align-items-center justify-content-center block-colors  text-light">
+            $error
+          </div>
+          <div class="bg-alert d-flex align-items-center justify-content-center block-colors  text-light">
+            $alert
+          </div>
         </div>
 
         <hr class="m-5" />
 
-        <p class="subtitle">Theme Colors</p>
-        <div
-        class="gap-2 text-center d-flex justify-content-center align-items-center flex-wrap"
-      >
-        <!-- content here -->
+        <p class="subtitle">Grays</p><br />
 
-        <div
-          class="d-flex align-items-center justify-content-center block-colors bg-primary text-white"
-        >
-          .bg-primary
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-center block-colors bg-secondary text-white"
-        >
-          .bg-secondary
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-center block-colors bg-success text-white"
-        >
-          .bg-success
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-center block-colors bg-danger text-white"
-        >
-          .bg-danger
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-center block-colors bg-warning text-dark"
-        >
-          .bg-warning
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-center block-colors bg-info text-dark"
-        >
-          .bg-info
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-center block-colors bg-light text-dark"
-        >
-          .bg-light
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-center block-colors bg-dark text-white"
-        >
-          .bg-dark
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-center block-colors bg-body text-dark"
-        >
-          .bg-body
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-center block-colors bg-white text-dark"
-        >
-          .bg-white
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-center block-colors bg-transparent text-dark"
-        >
-          .bg-transparent
-        </div>
-      </div>
+        <div class="gap-2 text-center d-flex justify-content-center align-items-center flex-wrap">
 
-      <hr class="m-5" />
+          <div class="gray-100 d-flex align-items-center justify-content-center block-colors text-dark">
+            $gray-100
+          </div>
 
-        <div
-          class="row g-2 text-center d-flex justify-content-center align-items-center gx-2"
-        >
+          <div class="gray-200 d-flex align-items-center justify-content-center block-colors text-dark">
+            $gray-200
+          </div>
+
+          <div class="gray-300 d-flex align-items-center justify-content-center block-colors text-dark">
+            $gray-300
+          </div>
+
+          <div class="gray-400 d-flex align-items-center justify-content-center block-colors text-dark">
+            $gray-400
+          </div>
+
+          <div class="gray-500 d-flex align-items-center justify-content-center block-colors text-dark">
+            $gray-500 <br /> light gray
+          </div>
+
+          <div class="gray-600 d-flex align-items-center justify-content-center block-colors text-dark">
+            $gray-600 <br /> cool gray
+          </div>
+
+          <div class="gray-700 d-flex align-items-center justify-content-center block-colors text-dark">
+            $gray-700 <br /> medium gray
+          </div>
+
+          <div class="gray-800 d-flex align-items-center justify-content-center block-colors text-dark">
+            $gray-800 <br /> gray
+          </div>
+
+          <div class="gray-900 d-flex align-items-center justify-content-center block-colors text-light">
+            $gray-900 midnight
+          </div>
+
+          <div class="gray-dark d-flex align-items-center justify-content-center block-colors text-light">
+            $dark
+          </div>
+
+          <div class="gray-white d-flex align-items-center justify-content-center block-colors text-dark">
+            $white
+          </div>
+
+        </div>
+
+        <hr class="m-5" />
+
+        <p class="subtitle">Theme Colors</p><br />
+
+        <div class="gap-2 text-center d-flex justify-content-center align-items-center flex-wrap">
+          <!-- content here -->
+
+          <div class="d-flex align-items-center justify-content-center block-colors bg-primary text-white">
+            .bg-primary
+          </div>
+          <div class="d-flex align-items-center justify-content-center block-colors bg-secondary text-white">
+            .bg-secondary
+          </div>
+          <div class="d-flex align-items-center justify-content-center block-colors bg-success text-white">
+            .bg-success
+          </div>
+          <div class="d-flex align-items-center justify-content-center block-colors bg-danger text-white">
+            .bg-danger
+          </div>
+          <div class="d-flex align-items-center justify-content-center block-colors bg-warning text-dark">
+            .bg-warning
+          </div>
+          <div class="d-flex align-items-center justify-content-center block-colors bg-info text-dark">
+            .bg-info
+          </div>
+          <div class="d-flex align-items-center justify-content-center block-colors bg-light text-dark">
+            .bg-light
+          </div>
+          <div class="d-flex align-items-center justify-content-center block-colors bg-dark text-white">
+            .bg-dark
+          </div>
+          <div class="d-flex align-items-center justify-content-center block-colors bg-body text-dark">
+            .bg-body
+          </div>
+          <div class="d-flex align-items-center justify-content-center block-colors bg-white text-dark">
+            .bg-white
+          </div>
+          <div class="d-flex align-items-center justify-content-center block-colors bg-transparent text-dark">
+            .bg-transparent
+          </div>
+        </div>
+
+        <hr class="m-5" />
+
+        <div class="row g-2 text-center d-flex justify-content-center align-items-center gx-2">
           <!-- content here -->
 
           <h2 class="text-primary">.text-primary</h2>
@@ -238,5 +187,15 @@
         </div>
       </section>
     </div>
-  </body>
+
+    <footer></footer>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <script src="dom.js"></script>
+
+</body>
+
 </html>

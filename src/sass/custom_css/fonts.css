@@ -30,6 +30,22 @@
     font-display: swap;
     src: url('/src/fonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
   }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/src/fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/src/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf') format('truetype');
+  }
   
   @font-face {
     font-family: 'Montserrat';

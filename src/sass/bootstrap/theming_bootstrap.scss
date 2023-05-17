@@ -1,5 +1,5 @@
-@import '../custom_sass/custom.scss';
 
+@import '../custom_sass/common/colors.scss';
 
 // Custom.scss
 // Option A: Include all of Bootstrap
@@ -12,15 +12,14 @@
 // scss-docs-start gray-color-variables
 
 
-
 $white:    $white-custom;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: $light-gray;
-$gray-700: $cool-gray;
+$gray-500: $light-gray;
+$gray-600: $cool-gray;
+$gray-700: $medium-gray;
 $gray-800: $gray;
 $gray-900: $midnight;
 $black:    $dark;
@@ -51,6 +50,20 @@ $body-bg:                   $white !default;
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              $primary !default;
+$link-decoration:                         underline !default;
+$link-shade-percentage:                   20% !default;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration:                   null !default;
+
+$stretched-link-pseudo-element:           after !default;
+$stretched-link-z-index:                  1 !default;
+
 //spacer
 
 $spacer: 1rem !default;
@@ -73,7 +86,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 2300
+  xxl: 2300px,
 ) !default;
 
 // Grid containers
@@ -82,13 +95,18 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1200px,
-  xxl: 2300px
+  xxl: 2300px,
 ) !default;
 
 // Grid columns
 $grid-columns:                12 !default;
 $grid-gutter-width:           1.25rem;
 $grid-row-columns:            6 !default;
+
+// Prefix for :root CSS variables
+
+$variable-prefix:             bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix:                      $variable-prefix !default;
 
 // Components
 //
@@ -143,7 +161,7 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 4;
+$h1-font-size:                $font-size-base * 3.375;
 $h2-font-size:                $font-size-base * 2.625;
 $h3-font-size:                $font-size-base * 2;
 $h4-font-size:                $font-size-base * 1.25;
@@ -155,8 +173,35 @@ $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        700;
-$headings-line-height:        1.2 !default;
+$headings-line-height:        1.2;
 $headings-color:              null !default;
+
+@import 'core/mixins/_breakpoints.scss';
+
+%heading-custom {
+  @extend %heading;
+  font-weight: 400 !important;
+}
+
+h3 {
+  @extend %heading-custom;
+}
+
+h4{
+  font-weight: 700 !important;
+}
+
+// scss-docs-start display-headings
+$display-font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+);
+$display-font-weight: 700;
+
 
 $small-font-size:             .875em !default;
 
@@ -389,7 +434,8 @@ $form-select-indicator:             url("data:image/svg+xml,<svg xmlns='http://w
 
 $form-select-feedback-icon-padding-end: $form-select-padding-x * 2.5 + $form-select-indicator-padding !default;
 $form-select-feedback-icon-position:    center right $form-select-indicator-padding !default;
-$form-select-feedback-icon-size:        $input-height-inner-half $input-height-inner-half !default;
+// QUEBRA O CÓDIGO
+// $form-select-feedback-icon-size:        $input-height-inner-half $input-height-inner-half !default;
 
 $form-select-border-width:        $input-border-width !default;
 $form-select-border-color:        $input-border-color !default;
@@ -480,6 +526,79 @@ $form-validation-states: (
 ) !default;
 // scss-docs-end form-validation-states
 
+
+
+// Navs
+
+// scss-docs-start nav-variables
+$nav-link-padding-y:                .5rem !default;
+$nav-link-padding-x:                1rem !default;
+$nav-link-font-size:                0.938rem;
+$nav-link-font-weight:              700 !important;
+$nav-link-color:                    var(--#{$prefix}link-color) !default;
+$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
+$nav-link-disabled-color:           $gray-600 !default;
+
+$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-border-width:             $border-width !default;
+$nav-tabs-border-radius:            $border-radius !default;
+$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        $gray-700 !default;
+$nav-tabs-link-active-bg:           $body-bg !default;
+$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+
+$nav-pills-border-radius:           $border-radius !default;
+$nav-pills-link-active-color:       $component-active-color !default;
+$nav-pills-link-active-bg:          $component-active-bg !default;
+// scss-docs-end nav-variables
+
+
+// Navbar
+
+// scss-docs-start navbar-variables
+$navbar-padding-y:                  $spacer * .5 !default;
+$navbar-padding-x:                  null !default;
+
+$navbar-nav-link-padding-x:         .5rem !default;
+
+$navbar-brand-font-size:            $font-size-lg !default;
+// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
+$nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;
+$navbar-brand-height:               $navbar-brand-font-size * $line-height-base !default;
+$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) * .5 !default;
+$navbar-brand-margin-end:           1rem !default;
+
+$navbar-toggler-padding-y:          .25rem !default;
+$navbar-toggler-padding-x:          .75rem !default;
+$navbar-toggler-font-size:          $font-size-lg !default;
+$navbar-toggler-border-radius:      $btn-border-radius !default;
+$navbar-toggler-focus-width:        $btn-focus-width !default;
+$navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
+
+$navbar-light-color:                $primary;
+$navbar-light-hover-color:          $secondary;
+$navbar-light-active-color:         $secondary;
+$navbar-light-disabled-color:       rgba($black, .3) !default;
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-border-color: rgba($black, .1) !default;
+$navbar-light-brand-color:          $navbar-light-active-color !default;
+$navbar-light-brand-hover-color:    $navbar-light-active-color !default;
+// scss-docs-end navbar-variables
+
+// scss-docs-start navbar-dark-variables
+$navbar-dark-color:                 rgba($white, .55) !default;
+$navbar-dark-hover-color:           rgba($white, .75) !default;
+$navbar-dark-active-color:          $white !default;
+$navbar-dark-disabled-color:        rgba($white, .25) !default;
+$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-dark-toggler-border-color:  rgba($white, .1) !default;
+$navbar-dark-brand-color:           $navbar-dark-active-color !default;
+$navbar-dark-brand-hover-color:     $navbar-dark-active-color !default;
+// scss-docs-end navbar-dark-variables
+
+
+
 @import "core/bootstrap.scss";
 
 // ADD NEW CODE HERE
@@ -560,4 +679,8 @@ $form-validation-states: (
   }
 }
 
+
+// Custom SASS
+
+@import '../custom_sass/custom.scss';
 

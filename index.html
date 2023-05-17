@@ -1,103 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="src/sass/custom_css/normalize.css" />
-    <link rel="stylesheet" href="src/sass/custom_css/fonts.css" />
-    <link rel="stylesheet" href="src/sass/custom_css/custom.css" />
-    <link rel="stylesheet" href="src/sass/bootstrap/theming_bootstrap.css" />
-    <script
-      defer
-      loading="lazy"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <header class="mb-5">
-      <nav class="navbar fixed-top navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="brand-link navbar-brand d-flex" href="#">
-            <img
-              class="brand-logo"
-              src="assets/logo-pagbrasil-color-v3.svg"
-              alt="Logo PagBrasil"
-            />
-          </a> 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="elements.html">Elementos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="grid.html">Grid</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="display.html">Display</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="colors.html">Colors</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="form.html">Form</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="images.html">Images</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="base.html">Base</a>
-              </li>
-              <li class="nav-item dropdown"></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="src/sass/custom_css/normalize.css" />
+  <link rel="stylesheet" href="src/sass/custom_css/fonts.css" />
+  <link rel="stylesheet" href="src/sass/custom_css/custom.css" />
+  <link rel="stylesheet" href="src/sass/bootstrap/theming_bootstrap.css" />
+  <script defer loading="lazy" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header></header>
+
+  <main>
 
     <div class="flex-column d-flex d-column align-items-center">
-      <section class="container m-4 p-4 text-start">
-        <div class="row d-flex align-items-center information m-3">
-          <img class="img-fluid col-1" src="assets/bootstrap.png" alt="" />
-          <div class="col-9">
-            <span class="pe-2">VERSÃO DO BOOTSTRAP: 5.2.3</span>
-            <a
-              class="d-inline link"
-              href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"
-              >acessar</a
-            >
-          </div>
+
+      <div class="row d-flex align-items-center information m-3 shadow">
+        <img class="img-fluid col-2" src="assets/bootstrap.png" alt="" />
+        <div class="col-9">
+          <span class="pe-2">VERSÃO DO BOOTSTRAP: 5.2.3</span>
+          <a class="d-inline link" href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">(acessar)</a>
         </div>
+      </div>
+
+
+      <section class="container m-4 p-4 text-start">
 
         <div class="row g-2">
           <!-- content here -->
 
-          <p class="title">Tipografia</p>
+          <p class="title">Tipografia headings - Montserrat</p>
           <h1>Heading 1</h1>
           <h2>Heading 2</h2>
           <h3>Heading 3</h3>
           <h4>Heading 4</h4>
           <h5>Heading 5</h5>
           <h6>Heading 6</h6>
+          <span>Span - Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in
+            the 1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+          </span>
+          <hr>
+          <p class="subtitle">Paragrafo - Nunito</p>
           <p>
             Parágrafo - Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industry's standard
@@ -109,19 +66,10 @@
             passages, and more recently with desktop publishing software like
             Aldus PageMaker including versions of Lorem Ipsum.
           </p>
-          <span
-            >Span - Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to make a type specimen book. It has
-            survived not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. It was popularised in
-            the 1960s with the release of Letraset sheets containing Lorem Ipsum
-            passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
-          </span>
-
+         
           <hr />
+
+          <p class="title">+ classes de estilização </p>
 
           <p class="subtitle">text-start</p>
           <p class="text-start">Start aligned text on all viewport sizes.</p>
@@ -131,11 +79,11 @@
           <p class="text-end">End aligned text on all viewport sizes.</p>
 
           <p class="subtitle">text-wrap + style="width: something"</p>
-          <div class="badge bg-primary text-wrap" style="width: 6rem">
-            This text should wrap.
+          <div class="badge bg-primary text-wrap" style="width: 200px">
+            This text should wrap in 200px
           </div>
 
-          <p class="subtitle">line-break</p>
+          <p class="subtitle pt-3">text-break</p>
           <p class="text-break">
             mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
           </p>
@@ -149,6 +97,8 @@
 
           <hr />
 
+          <p class="subtitle">Tamanho de font para substituir headings</p>
+
           <p class="fs-1">.fs-1 text</p>
           <p class="fs-2">.fs-2 text</p>
           <p class="fs-3">.fs-3 text</p>
@@ -157,6 +107,8 @@
           <p class="fs-6">.fs-6 text</p>
 
           <hr />
+
+          <p class="subtitle">Defina o tamanho da fonte</p>
 
           <p class="subtitle">fw- +</p>
           <p class="fw-bold">Bold text.</p>
@@ -180,28 +132,25 @@
 
           <div class="list-group">
             <p class="title">Links</p>
-            <a
-              href="#"
-              class="list-group-item list-group-item-action active"
-              aria-current="true"
-            >
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
               The current link item
             </a>
-            <a href="#" class="list-group-item list-group-item-action"
-              >A second link item</a
-            >
-            <a href="#" class="list-group-item list-group-item-action"
-              >A third link item</a
-            >
-            <a href="#" class="list-group-item list-group-item-action"
-              >A fourth link item</a
-            >
-            <a class="list-group-item list-group-item-action disabled"
-              >A disabled link item</a
-            >
+            <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+            <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
           </div>
         </div>
       </section>
     </div>
-  </body>
+
+  </main>
+
+  <footer></footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <script src="dom.js"></script>
+</body>
+
 </html>
