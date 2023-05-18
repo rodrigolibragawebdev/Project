@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bootstrap demo</title>
-  <link rel="stylesheet" href="src/sass/custom_css/normalize.css" />
-  <link rel="stylesheet" href="src/sass/custom_css/fonts.css" />
-  <link rel="stylesheet" href="src/sass/custom_css/custom.css" />
-  <link rel="stylesheet" href="src/sass/bootstrap/theming_bootstrap.css" />
-  <script defer loading="lazy" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-</head>
+<head></head>
 
 <body>
 
@@ -21,11 +10,14 @@
   <main>
 
     <div class="flex-column d-flex d-column justify-content-center align-items-center">
-      <section class="container m-4 p-4 text-start">
-        <div class="row g-2 d-flex justify-content-start">
-          <!-- content here -->
 
-          <div class="col-md-6 d-flex flex-column">
+      <section class="container p-4 m-4 text-start">
+
+        <!-- btns -->
+        <div class="row d-flex justify-content-around">
+
+          <!-- btns normais -->
+          <div class="col-md-5 g-3 d-flex flex-column gap-2 mt-4">
 
             <p class="title">Botões</p>
 
@@ -44,11 +36,11 @@
               <button type="button" class="btn btn-light">Light</button>
               <button type="button" class="btn btn-dark">
                 <img class="icon-16" src="/assets/icon/Calendário-16px-FFFFFF.svg" alt="" />
-                DARK
+                Dark
               </button>
               <button type="button" class="btn btn-link">Link</button>
             </div>
-            
+
             <!-- outline -->
             <div class="d-flex flex-column gap-2">
               <p class="subtitle">Outline</p>
@@ -91,23 +83,138 @@
                 Button
               </button>
             </div>
+
           </div>
-        
-          <p class="title">Shadows</p>
-          
-          <div class="shadow-none p-3 mb-3 bg-light rounded">
-            No shadow - shadow-none
+
+          <!-- rounded -->
+          <div class="col-md-5 g-3 d-flex flex-column gap-2 mt-4">
+            <p class="title">Btn Rounded</p>
+
+            <div class="d-flex flex-column align-items-start gap-2">
+
+              <p>img-cor única (troca cor de fundo) </p>
+              <button class="btn-rounded">
+                <img src="/assets/icon/icon2.svg" alt="" />
+                </svg>
+              </button>
+
+              <p>outline dark (svg) </p>
+              <button class="btn-rounded-outline-dark">
+
+                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>C17A29A2-3A18-4533-9CED-02EF784D460D</title>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Ícones-#FFFFFF" transform="translate(-650.000000, -657.000000)">
+                      <g id="Linkedin---24px---FFFFFF" transform="translate(650.000000, 657.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                        <path
+                          d="M12,2.25 C6.6152785,2.25 2.25,6.6152785 2.25,12 C2.25,17.3847215 6.6152785,21.75 12,21.75 C17.3847215,21.75 21.75,17.3847215 21.75,12 C21.75,6.6152785 17.3847215,2.25 12,2.25 Z"
+                          id="Stroke-1" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                        <path
+                          d="M8.53609674,10.4288584 L8.53609674,15.8090964 M16.75316,15.8090964 L16.75316,13.1189774 C16.75316,11.6332471 15.5487713,10.4288584 14.063041,10.4288584 C12.5773107,10.4288584 11.3729221,11.6332471 11.3729221,13.1189774 L11.3729221,15.8090964 M8.53609674,7.73873944 L8.53609674,8.63544577"
+                          id="Stroke-3" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+
+              </button>
+
+              <p>outline light (svg) </p>
+              <div class="bg-dark p-2">
+                <button class="btn-rounded-outline-light">
+
+                  <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>C17A29A2-3A18-4533-9CED-02EF784D460D</title>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ícones-#FFFFFF" transform="translate(-650.000000, -657.000000)">
+                        <g id="Linkedin---24px---FFFFFF" transform="translate(650.000000, 657.000000)">
+                          <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                          <path
+                            d="M12,2.25 C6.6152785,2.25 2.25,6.6152785 2.25,12 C2.25,17.3847215 6.6152785,21.75 12,21.75 C17.3847215,21.75 21.75,17.3847215 21.75,12 C21.75,6.6152785 17.3847215,2.25 12,2.25 Z"
+                            id="Stroke-1" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                          <path
+                            d="M8.53609674,10.4288584 L8.53609674,15.8090964 M16.75316,15.8090964 L16.75316,13.1189774 C16.75316,11.6332471 15.5487713,10.4288584 14.063041,10.4288584 C12.5773107,10.4288584 11.3729221,11.6332471 11.3729221,13.1189774 L11.3729221,15.8090964 M8.53609674,7.73873944 L8.53609674,8.63544577"
+                            id="Stroke-3" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+
+                </button>
+              </div>
+
+              <p>trocar as imagens (opacidade)</p>
+              <div>
+                <button class="btn-rounded-piloto">
+                  <img class="icon-white" src="/assets/icon/Calendário-24px-FFFFFF.svg" alt="">
+                  <img class="icon-black" src="/assets/icon/Calendário-24px-161616.svg" alt="">
+                </button>
+              </div>
+
+              <p>trocar as img no bg/p>
+              <div class="p-2" style="background-color: blue">
+                <div class="btn-root">
+                </div>
+              </div>
+
+            </div>
+
           </div>
-          <div class="shadow-sm p-3 mb-3 bg-body rounded">
-            Small shadow - shadow-sm
+
+          <div class="row my-3">
+            <p class="subtitle">Dropdown</p>
+
+            <div class="d-flex">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" data-bs-offset="10,20">
+                  Dropdown button
+                </button>
+                <div class="drop-menu-mobile dropdown-menu">
+                  <div class="triang"></div>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="shadow p-3 mb-3 bg-body rounded">
-            Regular shadow - shadow
+
+          <div class="row my-3">
+            <p class="subtitle">tooltip</p>
+
+            <div class="d-flex">
+              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-title="Tooltip on top">
+                Tooltip on top
+              </button>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-title="Tooltip on right">
+                Tooltip on right
+              </button>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Tooltip on bottom">
+                Tooltip on bottom
+              </button>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Tooltip on left">
+                Tooltip on left
+              </button>
+
+            </div>
           </div>
-          <div class="shadow-lg p-3 mb-3 bg-body rounded">
-            Larger shadow - shadow-lg
-          </div>
+
         </div>
+
+
+
       </section>
     </div>
 
@@ -115,9 +222,13 @@
 
   <footer></footer>
 
-  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-  <script src="dom.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+  <script defer src="dom.js"></script>
+  <script defer src="scripts.js"></script>
 </body>
 
 </html>

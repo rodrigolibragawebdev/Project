@@ -1,13 +1,27 @@
+p {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .container {
-    background-color: $gray-200; 
+    background-color: $gray-200;
     border-radius: 10px;
     color: black;
 }
 
 .color {
-    background-color: transparent;
-    border: 1px solid $dark;
-    height: 50px;
+    background-color: $pb-blue;
+    border: 1px solid $white;
+    min-height: 50px;
+    border-radius: 10px;
+    /* margin: 5px 5px; */
+}
+
+.color-child {
+    background-color: $pb-blue;
+    border: 1px solid $white;
+    min-height: 50px;
     border-radius: 10px;
     /* margin: 5px 5px; */
 }
@@ -26,7 +40,7 @@
     font-size: 12px;
     height: 120px;
     width: 120px;
-    border-radius: 50%;   
+    border-radius: 50%;
 }
 
 .information {
@@ -44,7 +58,7 @@ html {
     outline: 0;
 }
 
-main{
+main {
     min-height: 100vh;
 }
 
@@ -52,21 +66,22 @@ p {
     font-family: "Nunito Sans", sans-serif !important;
 }
 
-.btn-custom-outline{
-  background-color: transparent;
-  border: 1px solid black;
-  color: black;
+.btn-custom-outline {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
 }
 
 .icon-16 {
-  width: 16px !important;
-  height: auto;
+    width: 16px !important;
+    height: auto;
 }
-.dark{
+
+.dark {
     background-color: $dark;
 }
 
-.midnight{
+.midnight {
     background-color: $midnight;
 }
 
@@ -78,19 +93,19 @@ p {
     background-color: $medium-gray;
 }
 
-.cool-gray{
+.cool-gray {
     background-color: $cool-gray;
 }
 
-.light-gray{
+.light-gray {
     background-color: $light-gray;
 }
 
-.pb-blue{
+.pb-blue {
     background-color: $pb-blue;
 }
 
-.dark-blue{
+.dark-blue {
     background-color: $dark-blue;
 }
 
@@ -98,11 +113,11 @@ p {
     background-color: $cool-blue;
 }
 
-.violet{
+.violet {
     background-color: $violet;
 }
 
-.white{
+.white {
     background-color: $white-custom;
 }
 
@@ -122,47 +137,46 @@ p {
     background-color: $alert;
 }
 
-.gray-white{
+.gray-white {
     background-color: $white-custom;
 }
 
-.gray-100{
+.gray-100 {
     background-color: $gray-100;
 }
 
-.gray-200{
+.gray-200 {
     background-color: $gray-200;
 }
 
-.gray-300{
+.gray-300 {
     background-color: $gray-300;
 }
 
-.gray-400{
+.gray-400 {
     background-color: $gray-400;
 }
 
-.gray-500{
+.gray-500 {
     background-color: $gray-500;
 }
 
-.gray-600{
+.gray-600 {
     background-color: $gray-600;
 }
 
-.gray-700{
+.gray-700 {
     background-color: $gray-700;
 }
 
-.gray-800{
+.gray-800 {
     background-color: $gray-800;
 }
 
-.gray-900{
+.gray-900 {
     background-color: $gray-900;
 }
 
-.gray-dark{
+.gray-dark {
     background-color: $black;
 }
-
