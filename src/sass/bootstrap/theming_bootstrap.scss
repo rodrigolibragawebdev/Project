@@ -128,12 +128,12 @@ $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
-$border-radius-sm:            .25rem !default;
-$border-radius-lg:            .5rem !default;
-$border-radius-xl:            1rem !default;
-$border-radius-2xl:           2rem !default;
-$border-radius-pill:          50rem !default;
+$border-radius:               .375rem;
+$border-radius-sm:            .375rem;
+$border-radius-lg:            .375rem;
+$border-radius-xl:            .375rem;
+$border-radius-2xl:          .375rem;
+$border-radius-pill:          .375rem;
 // scss-docs-end border-radius-variables
 
 // scss-docs-start box-shadow-variables
@@ -148,6 +148,9 @@ $component-active-bg:         $primary !default;
 // Typography
 
 $font-family-sans-serif:      "Montserrat", arial;
+
+// adicionada
+$font-family-nunito:          "Nunito Sans", arial;
 
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875 !default;
@@ -219,7 +222,7 @@ $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:         .25rem !default;
 $input-btn-focus-color-opacity: .25 !default;
-$input-btn-focus-color:         rgba($component-active-bg, $input-btn-focus-color-opacity) !default;
+$input-btn-focus-color:         none;
 $input-btn-focus-blur:          0 !default;
 $input-btn-focus-box-shadow:    0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !default;
 
@@ -292,17 +295,17 @@ $form-text-color:                       $text-muted !default;
 
 // scss-docs-start form-label-variables
 $form-label-margin-bottom:              .5rem !default;
-$form-label-font-size:                  null !default;
+$form-label-font-size:                  1rem;
 $form-label-font-style:                 null !default;
 $form-label-font-weight:                null !default;
 $form-label-color:                      null !default;
 // scss-docs-end form-label-variables
 
 // scss-docs-start form-input-variables
-$input-padding-y:                       $input-btn-padding-y !default;
-$input-padding-x:                       $input-btn-padding-x !default;
-$input-font-family:                     $input-btn-font-family !default;
-$input-font-size:                       $input-btn-font-size !default;
+$input-padding-y:                       0.813rem;
+$input-padding-x:                       0.813rem;
+$input-font-family:                     $font-family-nunito;
+$input-font-size:                       1rem;
 $input-font-weight:                     $font-weight-base !default;
 $input-line-height:                     $input-btn-line-height !default;
 
@@ -315,12 +318,12 @@ $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-font-size-lg:                    $input-btn-font-size-lg !default;
 
 $input-bg:                              $body-bg !default;
-$input-disabled-color:                  null !default;
-$input-disabled-bg:                     $gray-200 !default;
-$input-disabled-border-color:           null !default;
+$input-disabled-color:                  $medium-gray;
+$input-disabled-bg:                     $light-gray;
+$input-disabled-border-color:           $light-gray;
 
-$input-color:                           $body-color !default;
-$input-border-color:                    $gray-400 !default;
+$input-color:                           $dark;
+$input-border-color:                    $cool-gray;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
@@ -329,12 +332,12 @@ $input-border-radius-sm:                $border-radius-sm !default;
 $input-border-radius-lg:                $border-radius-lg !default;
 
 $input-focus-bg:                        $input-bg !default;
-$input-focus-border-color:              tint-color($component-active-bg, 50%) !default;
-$input-focus-color:                     $input-color !default;
+$input-focus-border-color:              $cool-blue;
+$input-focus-color:                     $black;
 $input-focus-width:                     $input-btn-focus-width !default;
 $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
-$input-placeholder-color:               $gray-600 !default;
+$input-placeholder-color:               $cool-gray;
 $input-plaintext-color:                 $body-color !default;
 
 $input-height-border:                   $input-border-width * 2 !default;
@@ -344,9 +347,9 @@ $input-height-inner:                    add($input-line-height * 1em, $input-pad
 // $input-height-inner-half:               add($input-line-height * .5em, $input-padding-y) !default;
 // $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y * .5) !default;
 
-$input-height:                          add($input-line-height * 1em, add($input-padding-y * 2, $input-height-border, false)) !default;
-$input-height-sm:                       add($input-line-height * 1em, add($input-padding-y-sm * 2, $input-height-border, false)) !default;
-$input-height-lg:                       add($input-line-height * 1em, add($input-padding-y-lg * 2, $input-height-border, false)) !default;
+$input-height:                          50px;
+$input-height-sm:                       50px;
+$input-height-lg:                       50px;
 
 $input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
@@ -390,7 +393,7 @@ $form-check-inline-margin-end:    1rem !default;
 // scss-docs-end form-check-variables
 
 // scss-docs-start form-switch-variables
-$form-switch-color:               rgba($black, .25) !default;
+$form-switch-color:               $cool-gray;
 $form-switch-width:               2em !default;
 $form-switch-padding-start:       $form-switch-width + .5em !default;
 $form-switch-bg-image:            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color}'/></svg>") !default;
@@ -415,14 +418,14 @@ $input-group-addon-border-color:        $input-border-color !default;
 // scss-docs-end input-group-variables
 
 // scss-docs-start form-select-variables
-$form-select-padding-y:             $input-padding-y !default;
-$form-select-padding-x:             $input-padding-x !default;
-$form-select-font-family:           $input-font-family !default;
+$form-select-padding-y:             0.813rem;
+$form-select-padding-x:             0.813rem;
+$form-select-font-family:           $font-family-nunito;
 $form-select-font-size:             $input-font-size !default;
 $form-select-indicator-padding:     $form-select-padding-x * 3 !default; // Extra padding for background-image
 $form-select-font-weight:           $input-font-weight !default;
 $form-select-line-height:           $input-line-height !default;
-$form-select-color:                 $input-color !default;
+$form-select-color:                 $medium-gray;
 $form-select-bg:                    $input-bg !default;
 $form-select-disabled-color:        null !default;
 $form-select-disabled-bg:           $gray-200 !default;
@@ -438,11 +441,11 @@ $form-select-feedback-icon-position:    center right $form-select-indicator-padd
 // $form-select-feedback-icon-size:        $input-height-inner-half $input-height-inner-half !default;
 
 $form-select-border-width:        $input-border-width !default;
-$form-select-border-color:        $input-border-color !default;
+$form-select-border-color:        $cool-gray;
 $form-select-border-radius:       $input-border-radius !default;
 $form-select-box-shadow:          $box-shadow-inset !default;
 
-$form-select-focus-border-color:  $input-focus-border-color !default;
+$form-select-focus-border-color:  $cool-blue;
 $form-select-focus-width:         $input-focus-width !default;
 $form-select-focus-box-shadow:    0 0 0 $form-select-focus-width $input-btn-focus-color !default;
 
@@ -463,7 +466,7 @@ $form-select-transition:          $input-transition !default;
 $form-range-track-width:          100% !default;
 $form-range-track-height:         .5rem !default;
 $form-range-track-cursor:         pointer !default;
-$form-range-track-bg:             $gray-300 !default;
+$form-range-track-bg:             $cool-blue !default;
 $form-range-track-border-radius:  1rem !default;
 $form-range-track-box-shadow:     $box-shadow-inset !default;
 
@@ -517,11 +520,14 @@ $form-feedback-icon-invalid:        url("data:image/svg+xml,<svg xmlns='http://w
 $form-validation-states: (
   "valid": (
     "color": $form-feedback-valid-color,
-    "icon": $form-feedback-icon-valid
+    "icon": $form-feedback-icon-valid,
+    "focus-box-shadow": transparent
   ),
   "invalid": (
     "color": $form-feedback-invalid-color,
-    "icon": $form-feedback-icon-invalid
+    "icon": $form-feedback-icon-invalid,
+    "focus-box-shadow": transparent
+    
   )
 ) !default;
 // scss-docs-end form-validation-states
@@ -653,7 +659,24 @@ $dropdown-dark-link-disabled-color: $gray-500 !default;
 $dropdown-dark-header-color:        $gray-500 !default;
 // scss-docs-end dropdown-dark-variables
 
+// Tooltips
+// scss-docs-start tooltip-variables
+$tooltip-font-size:                 0.875rem;
+$tooltip-max-width:                 200px !default;
+$tooltip-color:                     $dark !default;
+$tooltip-bg:                        $white !default;
+$tooltip-border-radius:             $border-radius !default;
+$tooltip-opacity:                   .9 !default;
+$tooltip-padding-y:                 15px !default;
+$tooltip-padding-x:                 $spacer * .5 !default;
+$tooltip-margin:                     .3rem; // TODO: remove this in v6
 
+$tooltip-arrow-width:               1rem !default;
+$tooltip-arrow-height:              .7rem !default;
+// fusv-disable
+$tooltip-arrow-color:               null !default; // Deprecated in Bootstrap 5.2.0 for CSS variables
+// fusv-enable
+// scss-docs-end tooltip-variables
 
 @import "core/bootstrap.scss";
 
@@ -735,6 +758,17 @@ $dropdown-dark-header-color:        $gray-500 !default;
   }
 }
 
+
+.is-valid{
+  input:focus {
+    box-shadow: transparent !important;
+  }
+
+}
+
+.tooltip-inner{
+  box-shadow: 5px 4px 7px 2px rgba(0, 0, 0, 0.2);
+}
 
 // Custom SASS
 

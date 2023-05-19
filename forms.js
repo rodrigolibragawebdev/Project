@@ -1,14 +1,3 @@
-$(function () {
-  $("header").load("header.html");
-  $("footer").load("footer.html");
-});
-
-$(function () {
-  $("head").load("head.html");
-
-});
-
-// TEMP:
 
 // Handle range input
 const rangeInputs = document.querySelectorAll('input[type="range"]')
@@ -28,6 +17,3 @@ function handleInputChange(e) {
 rangeInputs.forEach(input => {
   input.addEventListener('input', handleInputChange)
 })
-
-
-// handle border input color

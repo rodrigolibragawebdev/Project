@@ -13,6 +13,8 @@
 
       <section class="container m-4 p-4 text-start">
 
+        <p class="title">Flexbox</p>
+
         <div class="row my-3">
           <p class="subtitle">Principais Flex</p>
           <p>Para criar uma tag flex, adicione a classe d-flex no elemento pai:</p>
@@ -27,71 +29,73 @@
 
         <div class="row my-3 g-2">
           <!-- content here -->
-          <p>d-flex nowrap (padrão) </p>
+          <p>d-flex nowrap - <strong>sem quebra de linha</strong> </p>
           <div class="d-flex gap-2">
-            <div class="color col-2">1</div>
-            <div class="color col-2">2</div>
-            <div class="color col-3">3</div>
-            <div class="color col-4">4</div>
-            <div class="color col-5">5</div>
-            <div class="color col-6">6</div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-3"></div>
+            <div class="color-child col-4"></div>
+            <div class="color-child col-5"></div>
+            <div class="color-child col-6"></div>
           </div>
 
-          <p>Dflex wrap (padrão) - flex-wrap </p>
+          <p> flex-wrap (já vem padrão) - <strong>com quebra de linha</strong> </p>
           <div class="d-flex gap-2 flex-wrap">
-            <div class="color col-2">1</div>
-            <div class="color col-2">2</div>
-            <div class="color col-3">3</div>
-            <div class="color col-4">4</div>
-            <div class="color col-5">5</div>
-            <div class="color col-6">6</div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-3"></div>
+            <div class="color-child col-4"></div>
+            <div class="color-child col-5"></div>
+            <div class="color-child col-6"></div>
           </div>
 
-          <p>flex-column // padrão é row</p>
+          <p>flex-column - <strong> estilo em com filhos em coluna</strong>
+          </p>
           <div class="d-flex gap-2 flex-column">
-            <div class="color col-2">1</div>
-            <div class="color col-2">2</div>
-            <div class="color col-2">3</div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
           </div>
         </div>
 
         <div class="row my-3 g-2">
-          <p class="subtitle">Padrão de alinhamento vertical</p>
+          <p class="subtitle">Padrão de alinhamento hotizontal</p>
+
           <p>justify-content-start</p>
-          <div class="color p-2 d-flex justify-content-start">
-            <div class="col-2 color"></div>
-            <div class="col-2 color"></div>
-            <div class="col-2 color"></div>
+          <div class="color p-2 d-flex justify-content-start gap-2">
+            <div class="col-2 color-child"></div>
+            <div class="col-2 color-child"></div>
+            <div class="col-2 color-child"></div>
           </div>
           <p>justify-content-end</p>
-          <div class="color p-2 d-flex justify-content-end">
-            <div class="col-2 color"></div>
-            <div class="col-2 color"></div>
-            <div class="col-2 color"></div>
+          <div class="color p-2 d-flex justify-content-end gap-2">
+            <div class="col-2 color-child"></div>
+            <div class="col-2 color-child"></div>
+            <div class="col-2 color-child"></div>
           </div>
           <p>justify-content-center</p>
-          <div class="color p-2 d-flex justify-content-center">
-            <div class="col-2 color"></div>
-            <div class="col-2 color"></div>
-            <div class="col-2 color"></div>
+          <div class="color p-2 d-flex justify-content-center gap-2">
+            <div class="col-2 color-child"></div>
+            <div class="col-2 color-child"></div>
+            <div class="col-2 color-child"></div>
           </div>
           <p>justify-content-between</p>
-          <div class="color p-2 d-flex justify-content-between">
-            <div class="col-2 color"></div>
-            <div class="col-2 color"></div>
-            <div class="col-2 color"></div>
+          <div class="color p-2 d-flex justify-content-between gap-2">
+            <div class="col-2 color-child"></div>
+            <div class="col-2 color-child"></div>
+            <div class="col-2 color-child"></div>
           </div>
           <p>justify-content-around</p>
-          <div class="color p-2 d-flex justify-content-around">
-            <div class="col-2 color"></div>
-            <div class="col-2 color"></div>
-            <div class="col-2 color"></div>
+          <div class="color p-2 d-flex justify-content-around gap-2">
+            <div class="col-2 color-child"></div>
+            <div class="col-2 color-child"></div>
+            <div class="col-2 color-child-cild"></div>
           </div>
           <p>justify-content-evenly</p>
           <div class="color p-2 d-flex justify-content-evenly">
-            <div class="col-2 color"></div>
-            <div class="col-2 color"></div>
-            <div class="col-2 color"></div>
+            <div class="col-2 color-child"></div>
+            <div class="col-2 color-child"></div>
+            <div class="col-2 color-child"></div>
           </div>
         </div>
 
@@ -99,89 +103,90 @@
           <p class="subtitle">Padrão de alinhamento vertical</p>
           
           <p>align-items-start</p>
-          <div style="height: 100px;"class="p-2 color d-flex align-items-start">
-            <div class="col-1 color"></div>
-            <div class="col-1 color"></div>
-            <div class="col-1 color"></div>
+          <div style="height: 100px;"class="p-2 color d-flex align-items-start gap-2">
+            <div class="col-1 color-child"></div>
+            <div class="col-1 color-child"></div>
+            <div class="col-1 color-child"></div>
           </div>
           <p>align-items-end</p>
-          <div style="height: 100px" class="p-2 color d-flex align-items-end">
-            <div class="col-1 color"></div>
-            <div class="col-1 color"></div>
-            <div class="col-1 color"></div>
+          <div style="height: 100px" class="p-2 color d-flex align-items-end gap-2">
+            <div class="col-1 color-child"></div>
+            <div class="col-1 color-child"></div>
+            <div class="col-1 color-child"></div>
           </div>
           <p>align-items-center</p>
-          <div style="height: 100px" class="p-2 color d-flex align-items-center">
-            <div class="col-1 color"></div>
-            <div class="col-1 color"></div>
-            <div class="col-1 color"></div>
+          <div style="height: 100px" class="p-2 color d-flex align-items-center gap-2">
+            <div class="col-1 color-child"></div>
+            <div class="col-1 color-child"></div>
+            <div class="col-1 color-child"></div>
           </div>
           <p>align-items-baseline</p>
-          <div style="height: 100px" class="p-2 color d-flex align-items-baseline">
-            <div class="col-1 color"></div>
-            <div class="col-1 color"></div>
-            <div class="col-1 color"></div>
+          <div style="height: 100px" class="p-2 color d-flex align-items-baseline gap-2">
+            <div class="col-1 color-child"></div>
+            <div class="col-1 color-child"></div>
+            <div class="col-1 color-child"></div>
           </div>
           <p>align-items-stretch</p>
-          <div style="height: 100px" class="p-2 color d-flex align-items-stretch">
-            <div class="col-1 color"></div>
-            <div class="col-1 color"></div>
-            <div class="col-1 color"></div>
+          <div style="height: 100px" class="p-2 color d-flex align-items-stretch gap-2">
+            <div class="col-1 color-child"></div>
+            <div class="col-1 color-child"></div>
+            <div class="col-1 color-child"></div>
           </div>
         </div>
 
         <div class="row my-3 g-2">
           <p class="subtitle">Padrão de alinhamento "self"</p>
-          <p>*Deve adicionar aos filhos</p>
+          <strong><p>*deve adicionar aos filhos de uma div com d-flex</p></strong>
           
           <p>align-self-start</p>
-          <div style="height: 100px;"class="p-2 color d-flex ">
-            <div style="height: 80px" class="col-1 color"></div>
-            <div class="align-self-start col-1 color"></div>
-            <div  style="height: 80px" class="col-1 color"></div>
+          <div style="height: 100px;"class="p-2 color d-flex gap-2">
+            <div style="height: 80px" class="col-1 color-child"></div>
+            <div class="align-self-start col-1 color-child"></div>
+            <div  style="height: 80px" class="col-1 color-child"></div>
           </div>
 
           <p>align-self-end</p>
-          <div style="height: 100px" class="p-2 color d-flex ">
-            <div style="height: 80px" class="col-1 color"></div>
-            <div class="align-self-end col-1 color"></div>
-            <div style="height: 80px" class="col-1 color"></div>
+          <div style="height: 100px" class="p-2 color d-flex gap-2">
+            <div style="height: 80px" class="col-1 color-child"></div>
+            <div class="align-self-end col-1 color-child"></div>
+            <div style="height: 80px" class="col-1 color-child"></div>
           </div>
 
           <p>align-self-center</p>
-          <div style="height: 100px" class="p-2 color d-flex ">
-            <div style="height: 80px" class="col-1 color"></div>
-            <div class="align-self-center col-1 color"></div>
-            <div style="height: 80px" class="col-1 color"></div>
+          <div style="height: 100px" class="p-2 color d-flex gap-2">
+            <div style="height: 80px" class="col-1 color-child"></div>
+            <div class="align-self-center col-1 color-child"></div>
+            <div style="height: 80px" class="col-1 color-child"></div>
           </div>
 
-          <p>align-self-baseline</p> (??)
-          <div style="height: 100px" class="p-2 color d-flex ">
-            <div style="height: 80px" class="col-1 color"></div>
-            <div class="align-self-baseline col-1 color"></div>
-            <div style="height: 80px" class="col-1 color"></div>
+          <span>align-self-baseline - <strong>alinha pela primeira</strong></span> 
+
+          <div style="height: 100px" class="p-2 color d-flex gap-2">
+            <div style="height: 75px" class="col-1 color-child"></div>
+            <div class="align-self-baseline col-1 color-child"></div>
+            <div style="height: 60px" class="col-1 color-child"></div>
           </div>
 
-          <p>align-self-stretch</p> (??)
-          <div style="height: 100px" class="p-2 color d-flex">
-            <div style="height: 80px" class="col-1 color"></div>
-            <div class="align-self-stretch col-1 color"></div>
-            <div style="height: 80px" class="col-1 color"></div>
+          <span>align-self-stretch - <strong>estica pelo tamanho da maior</strong></span> 
+          <div style="height: 100px" class="p-2 color d-flex gap-2" >
+            <div style="height: 80px" class="col-1 color-child"></div>
+            <div class="align-self-stretch col-1 color-child"></div>
+            <div style="height: 80px" class="col-1 color-child"></div>
           </div>
         </div>
 
         <div class="row my-3 g-2">
           <p class="subtitle">Grow and shrink </p>
           <p>flex-grow-1</p>
-          <div class="color p-5 d-flex align-items-center">
-            <div class="p-2 flex-grow-1 color ">flex-grow-1</div>
-            <div class="p-2 color">Flex item</div>
-            <div class="p-2 color ">Third flex item</div>
+          <div class="color p-5 d-flex align-items-center gap-2">
+            <div class="p-2 flex-grow-1 color-child ">flex-grow-1</div>
+            <div class="p-2 color-child">Flex item</div>
+            <div class="p-2 color-child ">Third flex item</div>
           </div>
           <p>flex-shrink-1</p>
-          <div class="d-flex color p-5 align-items-center">
-            <div class="color p-2 w-100">p-2 w-100</div>
-            <div class="color p-2 flex-shrink-1">flex-shrink-1</div>
+          <div class="d-flex color p-5 align-items-center Grow and shrink gap-2">
+            <div class="color-child p-2 w-100">p-2 w-100</div>
+            <div class="color-child p-2 flex-shrink-1">flex-shrink-1</div>
           </div>
         </div>
 
@@ -190,24 +195,24 @@
           <p>Flexbox can do some pretty awesome things when you mix flex alignments with auto margins. Shown below are three examples of controlling flex items via auto margins: default (no auto margin), pushing two items to the right (.me-auto), and pushing two items to the left (.ms-auto).</p>
           
           <p>sem nada</p>
-          <div class="color d-flex mb-3">
-            <div class="p-2">Flex item</div>
-            <div class="p-2">Flex item</div>
-            <div class="p-2">Flex item</div>
+          <div class="p-2 color d-flex mb-3 color gap-2">
+            <div class="p-2 color-child">Flex item</div>
+            <div class="p-2 color-child">Flex item</div>
+            <div class="p-2 color-child">Flex item</div>
           </div>
           
           <p>me-auto</p>
-          <div class="color d-flex mb-3">
-            <div class="me-auto p-2">me-auto</div>
-            <div class="p-2">Flex item</div>
-            <div class="p-2">Flex item</div>
+          <div class="p-2 color d-flex mb-3 gap-2">
+            <div class="me-auto p-2 color-child">me-auto</div>
+            <div class="p-2 color-child">Flex item</div>
+            <div class="p-2 color-child ">Flex item</div>
           </div>
           
           <p>ms-auto</p>
-          <div class="color d-flex mb-3">
-            <div class="p-2">Flex item</div>
-            <div class="p-2">Flex item</div>
-            <div class="ms-auto p-2">ms-auto</div>
+          <div class="p-2 color d-flex mb-3 gap-2">
+            <div class="p-2 color-child">Flex item</div>
+            <div class="p-2 color-child">Flex item</div>
+            <div class="color-child ms-auto p-2">ms-auto</div>
           </div>
         
         </div>
@@ -217,17 +222,17 @@
           <p>Flexbox can do some pretty awesome things when you mix flex alignments with auto margins. Shown below are three examples of controlling flex items via auto margins: default (no auto margin), pushing two items to the right (.me-auto), and pushing two items to the left (.ms-auto).</p>
           
           <p>style="height: 200px" / mb-auto dentro</p>
-          <div class="p-2 color d-flex align-items-start flex-column mb-3" style="height: 200px;">
-            <div class="color mb-auto p-2">mb-auto</div>
-            <div class="color p-2">Flex item</div>
-            <div class="color p-2">Flex item</div>
+          <div class="p-2 color d-flex align-items-start flex-column mb-3 gap-2 " style="height: 200px;">
+            <div class="color-child mb-auto p-2">mb-auto</div>
+            <div class="color-child p-2">Flex item</div>
+            <div class="color-child p-2">Flex item</div>
           </div>
           
           <p>style="height: 200px" / mt-auto dentro</p>
-          <div class="p-2 color d-flex align-items-end flex-column mb-3" style="height: 200px;">
-            <div class="color p-2">Flex item</div>
-            <div class="color p-2">Flex item</div>
-            <div class="color mt-auto p-2">mt-aut</div>
+          <div class="p-2 color d-flex align-items-end flex-column mb-3 gap-2" style="height: 200px;">
+            <div class="color-child p-2">Flex item</div>
+            <div class="color-child p-2">Flex item</div>
+            <div class="color-child mt-auto p-2">mt-aut</div>
           </div>
         
         </div>
@@ -235,68 +240,68 @@
         <div  class="row my-3 g-2">
           <p class="subtitle">Align content</p>
           <p>align-content-start</p>
-          <div class="p-3 d-flex align-content-start gap-2 flex-wrap" style="border: 1px solid black;border-radius: 6px;height: 200px;" >
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
+          <div class="p-3 d-flex align-content-start gap-2 flex-wrap color" style="height: 200px;" >
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
           </div>
 
           <p>align-content-end</p>
-          <div class="p-3 d-flex align-content-end gap-2 flex-wrap" style="border: 1px solid black;border-radius: 6px;height: 200px;" >
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
+          <div class="p-3 d-flex align-content-end gap-2 flex-wrap color" style="height: 200px;" >
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
           </div>
 
           <p>align-content-center</p>
-          <div class="p-3 d-flex align-content-center gap-2 flex-wrap" style="border: 1px solid black;border-radius: 6px;height: 200px;" >
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
+          <div class="p-3 d-flex align-content-center gap-2 flex-wrap color" style="height: 200px;" >
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
           </div>
 
           <p>align-content-between</p>
-          <div class="p-3 d-flex align-content-between gap-2 flex-wrap" style="border: 1px solid black;border-radius: 6px;height: 200px;" >
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
+          <div class="p-3 d-flex align-content-between gap-2 flex-wrap color" style="height: 200px;" >
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
           </div>
 
           <p>align-content-around </p>
-          <div class="p-3 d-flex align-content-around  gap-2 flex-wrap" style="border: 1px solid black;border-radius: 6px;height: 200px;" >
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
-            <div class="color col-2">1</div>
+          <div class="p-3 d-flex align-content-around  gap-2 flex-wrap color" style="height: 200px;" >
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
+            <div class="color-child col-2"></div>
           </div>
         
         </div>

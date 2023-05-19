@@ -4,3 +4,4 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 console.log(tooltipList)
 console.log(tooltipTriggerList)
+
