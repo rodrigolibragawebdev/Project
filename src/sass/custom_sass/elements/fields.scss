@@ -81,16 +81,14 @@ input:focus::placeholder {
 
 input:not(input[type='checkbox'], input[type='radio']):not(:placeholder-shown) {
   font-weight: bold;
-  border-color: $dark;
 }
-
-.form-select {
-  transform: .3;
+input:not(input:is(.is-valid, .is-invalid)):not(:placeholder-shown){
+  border-color: $dark;
 }
 
 .form-select:focus {
   color: $dark;
-  font-weight: bold;
+  // font-weight: bold;
 }
 
 
