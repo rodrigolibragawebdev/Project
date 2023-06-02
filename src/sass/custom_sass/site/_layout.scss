@@ -1,0 +1,213 @@
+
+html {
+    font-size: 16px;
+    outline: 0;
+}
+
+main {
+    min-height: 70vh;
+}
+
+ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.container, .container-fluid{
+    @include media-breakpoint-down (lg) {
+        padding: 0 1.0625rem;
+    }
+}
+
+// NEW P and M - 6 Variations for padding and margins:
+
+$custom_values:
+"p" "" "" "" 6 "padding" ""  "",
+"p" "" "-" "sm" 6 "padding" ""  "",
+"p" "" "-" "md" 6 "padding" ""  "",
+"p" "" "-" "lg" 6 "padding" ""  "",
+"p" "s" "" "" 6 "padding" "-" "left",
+"p" "s" "-" "sm" 6 "padding" "-" "left",
+"p" "s" "-" "md" 6 "padding" "-" "left",
+"p" "s" "-" "lg" 6 "padding" "-" "left",
+"p" "e" "" "" 6 "padding" "-" "right",
+"p" "e" "-" "sm" 6 "padding" "-" "right",
+"p" "e" "-" "md" 6 "padding" "-" "right",
+"p" "e" "-" "lg" 6 "padding" "-" "right",
+"p" "t" "" "" 6 "padding" "-" "top",
+"p" "t" "-" "sm" 6 "padding" "-" "top",
+"p" "t" "-" "md" 6 "padding" "-" "top",
+"p" "t" "-" "lg" 6 "padding" "-" "top",
+"p" "b" "" "" 6  "padding" "-" "bottom",
+"p" "b" "-" "sm" 6  "padding" "-" "bottom",
+"p" "b" "-" "md" 6  "padding" "-" "bottom",
+"p" "b" "-" "lg" 6  "padding" "-" "bottom",
+"p" "x" "" "" 6 "padding" "" "px",
+"p" "x" "-" "sm" 6 "padding" "" "px",
+"p" "x" "-" "md" 6 "padding" "" "px",
+"p" "x" "-" "lg" 6 "padding" "" "px",
+"p" "y" "" "" 6 "padding" "" "py",
+"p" "y" "-" "sm" 6 "padding" "" "py",
+"p" "y" "-" "md" 6 "padding" "" "py",
+"p" "y" "-" "lg" 6 "padding" "" "py",
+"m" "" "" "" 6 "margin" "" "",
+"m" "" "-" "sm" 6 "margin" "" "",
+"m" "" "-" "md" 6 "margin" "" "",
+"m" "" "-" "lg" 6 "margin" "" "",
+"m" "s" "" "" 6 "margin" "-" "left",
+"m" "s" "-" "sm" 6 "margin" "-" "left",
+"m" "s" "-" "md" 6 "margin" "-" "left",
+"m" "s" "-" "lg" 6 "margin" "-" "left",
+"m" "e" "" "" 6 "margin" "-" "right",
+"m" "e" "-" "sm" 6 "margin" "-" "right",
+"m" "e" "-" "md" 6 "margin" "-" "right",
+"m" "e" "-" "lg" 6 "margin" "-" "right",
+"m" "t" "" "" 6 "margin" "-" "top",
+"m" "t" "-" "sm" 6 "margin" "-" "top", 
+"m" "t" "-" "md" 6 "margin" "-" "top",
+"m" "t" "-" "lg" 6 "margin" "-" "top",
+"m" "b" "" "" 6  "margin" "-" "bottom",
+"m" "b" "-" "sm" 6  "margin" "-" "bottom",
+"m" "b" "-" "md" 6  "margin" "-" "bottom",
+"m" "b" "-" "lg" 6  "margin" "-" "bottom",
+"m" "x" "" "" 6 "margin" "" "mx",
+"m" "x" "-" "sm" 6 "margin" "" "mx",
+"m" "x" "-" "md" 6 "margin" "" "mx",
+"m" "x" "-" "lg" 6 "margin" "" "mx",
+"m" "y" "" "" 6 "margin" "" "my",
+"m" "y" "-" "sm" 6 "margin" "" "my",
+"m" "y" "-" "md" 6 "margin" "" "my",
+"m" "y" "-" "lg" 6 "margin" "" "my";
+
+@each $letter, $complement, $prefix, $grid, $value, $prop, $prefix_end, $variable_direction in $custom_values {
+
+.#{$letter}#{$complement}#{$prefix}#{$grid}-#{$value}{
+
+@if $variable_direction == "my" {
+  @if $grid == "sm" {
+    @include media-breakpoint-up(sm) {
+      #{$prop}: 0.625rem * 6 0 !important;
+    }
+  } @else if $grid == "md" {
+    @include media-breakpoint-up(md) {
+      #{$prop}: 0.625rem * 6 0 !important;
+    }
+  } @else if $grid == "lg" {
+    @include media-breakpoint-up(lg) {
+      #{$prop}: 0.625rem * 6 0 !important;
+    }
+  } @else {
+  #{$prop}: 0.625rem * 6 0 !important;
+  }
+} 
+@else if $variable_direction == "py" {
+  @if $grid == "sm" {
+    @include media-breakpoint-up (sm) {
+      #{$prop}: 0.625rem * 6 0 !important;
+    }
+  } @else if $grid == "md" {
+    @include media-breakpoint-up (md) {
+      #{$prop}: 0.625rem * 6  0!important;
+    }
+  } @else if $grid == "lg" {
+    @include media-breakpoint-up (lg) {
+      #{$prop}: 0.625rem * 6 0 !important;
+    }
+  } @else {
+
+  #{$prop}: 0.625rem * 6 0 !important;
+  }
+} 
+@else if $variable_direction == "mx" {
+  @if $grid == "sm" {
+    @include media-breakpoint-up (sm) {
+      #{$prop}: 0 0.625rem * 6 !important;
+    }
+  } @else if $grid == "md" {
+    @include media-breakpoint-up (md) {
+      #{$prop}: 0 0.625rem * 6 !important;
+    }
+  } @else if $grid == "lg" {
+    @include media-breakpoint-up (lg) {
+      #{$prop}: 0 0.625rem * 6 !important;
+    }
+  } @else {
+  #{$prop}: 0 0.625rem * 6 !important;
+  }
+} 
+@else if $variable_direction == "px" {
+  @if $grid == "sm" {
+    @include media-breakpoint-up(sm) {
+      #{$prop}: 0 0.625rem * 6 !important;
+    }
+  } @else if $grid == "md" {
+    @include media-breakpoint-up(md) {
+      #{$prop}: 0 0.625rem * 6 !important;
+    }
+  } @else if $grid == "lg" {
+    @include media-breakpoint-up(lg) {
+      #{$prop}: 0 0.625rem * 6 !important;
+    }
+  } @else {
+  #{$prop}: 0 0.625rem * 6 !important;
+  }
+} 
+@else {
+  @if $grid == "sm" {
+    @include media-breakpoint-up(sm) {
+        // padding-left: [data]
+      #{$prop}#{$prefix_end}#{$variable_direction}: 0.625rem * 6 !important;
+    }
+  } @else if $grid == "md" {
+    @include media-breakpoint-up(md) {
+      #{$prop}#{$prefix_end}#{$variable_direction}: 0.625rem * 6 !important;
+    }
+
+  } @else if $grid == "lg" {
+    @include media-breakpoint-up(lg) {
+      #{$prop}#{$prefix_end}#{$variable_direction}: 0.625rem * 6 !important;
+    }
+  } @else {
+    #{$prop}#{$prefix_end}#{$variable_direction}: 0.625rem * 6 !important;
+  }
+}
+
+}
+
+}
+
+$gap_values: 
+"sm" "-",
+"md" "-",
+"sm" "-",
+"" "";
+
+@each $grid, $optPrefix in $gap_values {
+    
+    .gap-#{$grid}#{$optPrefix}6{
+
+        @if $grid == "sm" {
+            @include media-breakpoint-up(sm) {
+                gap: 0.625rem * 6 !important
+            }
+        
+            } @else if $grid == "md" {
+
+                @include media-breakpoint-up(md) {
+                    gap: 0.625rem * 6 !important
+                }
+        
+            } @else if $grid == "lg" {
+
+                @include media-breakpoint-up(lg) {
+                    gap: 0.625rem * 6 !important
+                }
+        
+            } @else {
+                gap: 0.625rem * 6 !important
+            }    
+    }
+    
+  
+} 

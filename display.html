@@ -11,52 +11,69 @@
 
     <div class="flex-column d-flex d-column align-items-center">
 
-      <section class="container m-4 p-4 text-start d-flex flex-column gap-3">
+      <section class="container m-2 p-2 text-start d-flex flex-column gap-1">
 
         <p class="title">Display</p>
 
-        <div class="row g-2">
+        <div class="row g-1">
           <!-- content here -->
           <div class="flex-wrap d-flex flex-column gap-1">
 
             <p class="subtitle">Inline</p>
             <div>
               <span>[placeholder]</span>
-              <div class="d-inline p-3 text-bg-dark">d-inline</div>
-              <div class="d-inline p-3 text-bg-dark">d-inline</div>
+              <div class="d-inline p-1 text-bg-dark">d-inline</div>
+              <div class="d-inline p-1 text-bg-dark">d-inline</div>
             </div>
 
             <p class="subtitle mt-4">Block</p>
             <span>[placeholder]</span>
-            <div class="d-block p-3 text-bg-primary">d-block</div>
-            <div class="d-block p-3 text-bg-primary">d-block</div>
+            <div class="d-block p-1 text-bg-primary">d-block</div>
+            <div class="d-block p-1 text-bg-primary">d-block</div>
 
             <p class="subtitle mt-4">Inline block</p>
             <div>
               <span>[placeholder]</span>
-              <div class="d-inline-block p-3 text-bg-primary">d-inline-block</div>
-              <div class="d-inline-block p-3 text-bg-primary">d-inline-block</div>
+              <div class="d-inline-block p-1 text-bg-primary">d-inline-block</div>
+              <div class="d-inline-block p-1 text-bg-primary">d-inline-block</div>
             </div>
 
           </div>
 
           <p class="subtitle mt-5">Responsividade de display</p>
 
-          <p>Visible only in sm</p>
+          <p>Visible only in sm - <strong>d-sm-none</strong></p>
           <div class="d-sm-none color">d-sm-none</div>
           <hr class="mb-2">
 
-          <p>Visible only in md</p>
+          <p>Visible only in md - <strong>d-md-none</strong></p>
           <div class="d-md-none color">d-md-none</div>
           <hr class="mb-2">
 
-          <p>Visible only in lg</p>
+          <p>Visible only in lg - <strong>d-lg-none</strong></p>
           <div class="d-lg-none color">d-lg-none</div>
           <hr class="mb-2">
 
-          <p>Visible only in xs</p>
+          <p>Visible only in xs - <strong>d-xs-none</strong></p>
           <div class="d-xs-none color">d-xs-none</div>
-         
+          <hr class="mb-2">
+
+          <p>Mostrar a partir de xs - <strong> d-none d-xs-block</strong></p>
+          <div class="d-none d-xs-block color"> d-none d-xs-block</div>
+          <hr class="mb-2">
+
+          <p>Mostrar a partir de lg - <strong> d-none d-lg-block</strong></p>
+          <div class="d-none d-lg-block color"> d-none d-lg-block</div>
+          <hr class="mb-2">
+
+          <p>Mostrar a partir de md - <strong> d-none d-md-block</strong></p>
+          <div class="d-none d-md-block color"> d-none d-md-block</div>
+          <hr class="mb-2">
+
+          <p>Mostrar somente em SM- <strong> d-sm-none</strong></p>
+          <div class="d-sm-none color">d-sm-none</div>
+          <hr class="mb-2">
+
 
           <p class="mt-4 subtitle">Possibilidades de display:</p>
           <div class="information">
@@ -89,8 +106,9 @@
         <p class="subtitle">Flex</p>
 
         <div>
-          <div class="container d-flex flex-column">
-            <p>Start</p>
+          <div class="container d-flex flex-column p-2">
+           
+            <p class="pb-0">Start</p>
             <div class="row pb-3 justify-content-start">
               <div class="col-4 color">
                 One of two columns
@@ -99,7 +117,8 @@
                 One of two columns
               </div>
             </div>
-            <p>Center</p>
+            <hr class="m-0">
+            <p class="pb-0">Center</p>
             <div class="row pb-3 justify-content-center">
               <div class="col-4 color">
                 One of two columns
@@ -108,7 +127,8 @@
                 One of two columns
               </div>
             </div>
-            <p>End</p>
+            <hr class="m-0">
+            <p class="pb-0">End</p>
             <div class="row pb-3 justify-content-end">
               <div class="col-4 color">
                 One of two columns
@@ -117,7 +137,8 @@
                 One of two columns
               </div>
             </div>
-            <p>around</p>
+            <hr class="m-0">
+            <p class="pb-0">around</p>
             <div class="row pb-3 justify-content-around">
               <div class="col-4 color">
                 One of two columns
@@ -126,7 +147,8 @@
                 One of two columns
               </div>
             </div>
-            <p>Between</p>
+            <hr class="m-0">
+            <p class="pb-0">Between</p>
             <div class="row pb-3 justify-content-between">
               <div class="col-4 color">
                 One of two columns
@@ -135,7 +157,8 @@
                 One of two columns
               </div>
             </div>
-            <p>Evenly</p>
+            <hr class="m-0">
+            <p class="pb-0">Evenly</p>
             <div class="row pb-3 justify-content-evenly">
               <div class="col-4 color">
                 One of two columns
@@ -160,7 +183,7 @@
 
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
-  <script src="dom.js"></script>
+    <script src="./scripts/dom.js"></script>
 
 </body>
 

@@ -1,0 +1,135 @@
+header {
+    .container-fluid {
+        padding: 0;
+    }
+
+    z-index: 9999;
+    height: 90px;
+
+    @include media-breakpoint-down(lg){
+        height: 5rem;
+    }
+
+    &>div {
+        .header__logo {
+            &>a>img  {
+            width: 12.5rem;
+            @include media-breakpoint-down(lg) {
+                width: 10.625rem;
+            }
+            }
+        }
+    }
+
+    .header__desktop {
+        &>div {
+
+            .dropdown-menu .show {
+                display: none;
+            }
+
+            .menu-nav {
+                .navbar-nav {
+                    gap: 26px
+                }
+            }
+
+            .header__btn {
+                width: 14.688rem;
+            }
+        }
+
+    }
+
+    .header__mobile {
+
+        .offcanvas-header {
+            min-height: 90px;
+            max-height: 90px;
+
+            .header-mobile__btn--fechar {
+                background-color: transparent;
+                border: 0;
+
+            }
+        }
+
+
+        .header-mobile__menu--title {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 1.875rem 0 2.5rem 0;
+        }
+
+        .header-mobile__nav--bottom-box {
+
+            hr {
+
+                opacity: 1;
+                width: 100%;
+                border: 1px solid $dark;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            .bottom__language-box {
+                border-radius: 20px;
+                height: 84px;
+                width: 100%;
+                max-width: 430px;
+
+                .language-box__title {
+                    color: $white;
+                    margin: 0 52px 0 20px;
+                }
+
+                .language__selector-box {
+
+                    p {
+                        cursor: pointer;
+                        width: 50px;
+                        height: 50px;
+                        padding: 25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $medium-gray;
+                        border: 1px solid $medium-gray;
+                        border-radius: 50%;
+
+                        span {
+                            padding: 0;
+                        }
+
+                        &.active {
+                            color: $white;
+                            border-color: $white;
+                        }
+
+                        &:hover {
+                            color: $dark;
+                            border-color: transparent;
+                            background-color: $white;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+}
+
+#breadcrumbs {
+    color: $medium-gray !important;
+    font-size: .75rem;
+    font-family: "Nunito Sans", sans-serif;
+    a{
+        color: $medium-gray;
+        text-decoration: underline;
+    }
+}

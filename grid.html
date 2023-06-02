@@ -7,18 +7,18 @@
   <header></header>
 
   <main>
-    <div class="pt-4 flex-column d-flex d-column align-items-center">
+    <div class="pt-3 flex-column d-flex d-column align-items-center">
       <div class="container-fluid mx-0 text-center">
         <p class="subtitle">[CONTAINERS]</p>
-        <div class="py-2 color container mx-auto my-auto d-flex align-items-center justify-content-center">
-          <div class="container-fluid color-child"> container inside</div>
+        <div class="py-2 color container-fluid mx-auto my-auto d-flex align-items-center justify-content-center">
+          <div class="container color-child"> container inside a container fluid </div>
         </div>
         <div class="color container-fluid mt-2 d-flex align-items-center justify-content-center">
           <span class="text-white">container fluid (fullwidth)</span>
         </div>
       </div>
 
-      <section class="container d-flex flex-column gap-3 m-4 p-4 text-start">
+      <section class="container d-flex flex-column gap-1 m-3 p-4 text-start">
         <p class="title">Grid</p>
         <div class="row g-2">
           <!-- content here -->
@@ -34,16 +34,17 @@
                 <p>Extra extra large (xxl)</p>
               </div>
               <div class="col-md-7">
+
                 <code>
-                    $grid-breakpoints: (
-                    <br />xs: 0, <br />sm: 576px, <br />md: 768px, <br />lg:
-                    992px, <br />xl: 1200px, <br />xxl: 2300 <br />
-                    ) !default;
+                    $grid-breakpoints: 
+                    <br />xs: 0, <br />sm: 540px, <br />md: 540px, <br />lg:
+                    1100px, <br />xl: 4000px, <br />xxl: 5000px <br />
+                    ;
 
                     <br />
-                    <br />// Grid containers <br />$container-max-widths: (
-                    <br />sm: 540px, <br />md: 720px, <br />lg: 960px, <br />xl:
-                    1200px, <br />xxl: 2300px <br />) !default;</code>
+                    <br />// Grid containers <br />$container-max-widths: 
+                    <br />sm: 540px, <br />md: 1100px, <br />lg: 1200px, <br />xl:
+                    4000px, <br />xxl: 5000px <br> </code>
               </div>
             </div>
 
@@ -126,8 +127,50 @@
         </div>
 
         <p class="title">Grids</p>
+        <p class="subtitle">Padding, gap e margin</p>
+        [letra] = 10px, [letra-1] = 20px ... sempre somando 10px
+        <p><strong>0 = 10px, 1 = 20px, 2 = 30px, 3 = 40px, 4 = 50px, 5 = 60px</strong></p>
+        <p>p e m = padding e margin</p>
+        <p>t = top, b = bottom, s = start, e = end, x = left+right, y = top+bottom, blank = tudo</p>
+        <p> responsividade: adicionar me-lg-3 faz com que tenha 3 somente de lg pra cima, e sucessivamente</p>
+
+        <div class="row d-flex color p-1">
+          <div class="color-child col me-0">me-0</div>
+          <div class="color-child col"></div>
+        </div>
+
+        <div class="row d-flex color p-1">
+          <div class="color-child col me-1">me-1</div>
+          <div class="color-child col"></div>
+        </div>
+
+        <div class="row d-flex color p-1">
+          <div class="color-child col me-2">me-2</div>
+          <div class="color-child col"></div>
+        </div>
+
+        <div class="row d-flex color p-1">
+          <div class="color-child col me-3">me-3</div>
+          <div class="color-child col"></div>
+        </div>
+
+        <div class="row d-flex color p-1">
+          <div class="color-child col me-4">me-4</div>
+          <div class="color-child col"></div>
+        </div>
+
+        <div class="row d-flex color p-1">
+          <div class="color-child col me-5">me-5</div>
+          <div class="color-child col"></div>
+        </div>
+
+        <div class="row d-flex color p-1">
+          <div class="color-child col me-6">me-5</div>
+          <div class="color-child col"></div>
+        </div>
+
         <p class="subtitle">Columns with gutter</p>
-        <div class="row d-flex gap-2 mb-5">
+        <div class="row d-flex gap-0 mb-5">
           <div class="color col-1 text-white">col-1</div>
           <div class="color col-1 text-white">col-1</div>
           <div class="color col-1 text-white">col-1</div>
@@ -184,13 +227,132 @@
       </section>
     </div>
 
+    <div class="container p-2">
+
+      <p class="subtitle">Padding, gap e margin</p>
+        [letra-0] = 0<br>
+        [letra-1] = 10px,<br>
+        [letra-2] = 20px,<br>
+        [letra-3] = 30px,<br>
+        [letra-4] = 40px,<br>
+        [letra-5] = 50px,<br>
+        [letra-6] = 60px,<br>
+       
+        <p>P e M = padding e margin</p>
+        <p>GAP = Gap para flex</p>
+          t = top, <br>
+          b = bottom, <br>
+          s = start, <br>
+          e = end, <br>
+          x = left+right,<br>
+          y = top+bottom, <br>
+          blank = tudo <br>
+        </p>
+        <p> Responsividade: adicionar m-lg-3 faz com que tenha "3" somente de lg pra cima, e sucessivamente para os outros grids e combinações</p>
+
+        <p><strong>Exemplos com p-6 e m-6 e gap-6</strong></p>
+      <p>p6</p>
+        <div class="color p-6 d-flex justify-content-evenly">
+          <div class="col-12 color-child"></div>
+        </div>
+
+        <p>p-lg-6</p>
+        <div class="color p-lg-6 d-flex justify-content-evenly">
+          <div class="col-12 color-child"></div>
+        </div>
+
+        <p>p-md-6</p>
+        <div class="color p-md-6 d-flex justify-content-evenly">
+          <div class="col-12 color-child"></div>
+        </div>
+
+        <p>p-sm-6</p>
+        <div class="color p-sm-6 d-flex justify-content-evenly">
+          <div class="col-12 color-child"></div>
+        </div>
+
+        <p>py-6</p>
+        <div class="color py-6 d-flex justify-content-evenly">
+          <div class="col-12 color-child"></div>
+        </div>
+
+        <p>px-6</p>
+        <div class="color px-6 d-flex justify-content-evenly">
+          <div class="col-12 color-child"></div>
+        </div>
+
+        <p>ps-6</p>
+        <div class="color ps-6 d-flex justify-content-evenly">
+          <div class="col-12 color-child"></div>
+        </div>
+
+        <p>pe-6</p>
+        <div class="color pe-6 d-flex justify-content-evenly">
+          <div class="col-12 color-child"></div>
+        </div>
+
+        <p>pb-6</p>
+        <div class="color pb-6 d-flex justify-content-evenly">
+          <div class="col-12 color-child"></div>
+        </div>
+
+        <p>pt-6</p>
+        <div class="color pt-6 d-flex justify-content-evenly">
+          <div class="col-12 color-child"></div>
+        </div>
+
+        <p>pt-lg-6</p>
+        <div class="color pl-lg-6 d-flex justify-content-evenly">
+          <div class="col-12 color-child"></div>
+        </div>
+
+        <hr class="m-6">
+
+        <div class="color-child flex-column p-2">
+          <p class="color w-100 m-6">m-6</p>
+          <p>_</p>
+          <p class="color w-100 m-lg-6">m-lg-6</p>
+          <p>_</p>
+          <p class="color w-100 m-md-6">m-md-6</p>
+          <p>_</p>
+          <p class="color w-100 m-sm-6">m-sm-6</p>
+          <p>_</p>
+          <p class="color w-100 mx-6">mx-6</p>
+          <p>_</p>
+          <p class="color w-100 my-6">my-6</p>
+          <p>_</p>
+          <p class="color w-100 my-lg-6">my-lg-6</p>
+          <p>_</p>
+          <p class="color w-100 mt-6">mt-6</p>
+          <p>_</p>
+          <p class="color w-100 mb-6">mb-6</p>
+          <p>_</p>
+          <p class="color w-100 ms-6">ms-6</p>
+          <p>_</p>
+          <p class="color w-100 me-6">me-6</p>
+          <p>_</p>              
+          <p class="color w-100 me-lg-6">me-lg-6</p>
+        </div>
+
+        <hr class="my-5">
+
+        <div class=" color p-1 d-flex align-items-center justify-content-center gap-6">
+          <div class="col color-child"></div>
+          <div class="col color-child"></div>
+          <div class=" colcolor-child"></div>
+          <div class="col color-child"></div>
+        </div>
+
+
+  </div>
+
   </main>
 
   <footer></footer>
 
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
-  <script src="dom.js"></script>
+  <script src="./scripts/dom.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,40 @@
+// TIPOS
+
+@mixin type-h1 {
+    font-size: calc(1rem * 4);
+    font-family: 'Montserrat', arial !important;
+    font-weight: bold;
+}
+
+@mixin type-h2 {
+    font-size: calc(1rem * 2.625);
+    font-family: 'Montserrat', arial !important;
+    font-weight: bold;
+}
+
+@mixin type-h3 {
+    font-size: calc(1rem * 2);
+    font-family: 'Montserrat', arial !important;
+    font-weight: normal;
+}
+
+@mixin type-h4 {
+    font-size: calc(1rem * 1.25);
+    font-family: 'Montserrat', arial !important;
+    font-weight: bold;
+}
+
+@mixin type-h5 {
+    font-size: calc(1rem * 1.25);
+    font-family: 'Montserrat', arial !important;
+    font-weight: bold;
+}
+
+@mixin display-flex ($justify, $align, $gap, $wrap, $direction: null) {
+    display: flex;
+    flex-wrap:$wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap
+}

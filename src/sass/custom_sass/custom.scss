@@ -3,23 +3,23 @@
 * Comuns
 */
 
-@import './common/all-common.scss';
+@import './common/index.scss';
 
 /*
 * Módulos de construção
 */
 
-@import './modules/all-modules.scss';
+@import './modules/index.scss';
 
 /*
 * Elementos (tags)
 */
 
-@import './elements/all-elements.scss';
+@import './elements/index.scss';
 
 /*
-* Site general
+* Site como um todo
 */
 
-@import './site/all-site.scss';
+@import './site/index.scss';
 

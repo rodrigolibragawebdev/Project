@@ -1,0 +1,120 @@
+@import '../bootstrap/theming_bootstrap.scss';
+
+.main__page {
+
+    @include media-breakpoint-down (lg) {
+        .container:first-of-type{
+            margin-bottom: 180px;
+        }
+    }
+
+    .page__block-1 {
+
+        .block-1__headline-box {}
+
+        .block-1__btn-box {
+            button {
+                width: 17.5rem;
+            }
+        }
+
+    }
+
+    .page__block-2--iframe-box {
+        max-width: 500px;
+        
+        .wpcf7-form{
+         display: flex;
+         flex-direction: column;
+         gap: 1.25rem;
+        }
+
+       .form__btn {
+        margin: 0 auto;
+        
+        img{
+            margin-right: .3125rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            max-width: 21.3125rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 3.125rem;
+        }
+       } 
+
+    }
+
+    .page__block-3--map-box {
+
+    
+        position: relative;
+        height: 454px;
+        background: url('../../imagens/diversas/teste.jpg');
+        background-position: center;
+        background-size: cover;
+        
+        @include media-breakpoint-down (lg) {
+            height: 360px;
+        }
+
+
+        .map-box__address-box {
+            position: absolute;
+            width: 18.25rem;
+            height: 20.875rem;
+            background-color: $white;
+            border-radius: 6px;
+            box-shadow: 0 7px 24px 0 rgba(22,22,22,0.2);
+            top: -113px;
+
+            @include media-breakpoint-up (lg) {
+                margin-left: 300px;
+                top: 60px;
+            }
+
+            .address-box__part-1{
+                img{
+                    background-color: $cool-blue;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    padding: 10px 8px 21px 8px;
+                }
+            }
+
+            hr{
+                margin-bottom: -6px;
+                margin-top: -8px;
+            }
+
+            .address-box__part-2{
+
+                h4 {
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    margin-bottom: 10px;
+                }
+
+            }
+
+            .address-box__part-3{
+                h4 {
+                    
+                    margin:0 0 10px 0;
+                }
+                p {
+                    // margin-top: -5px;
+                    font-size: 0.75rem;
+                }
+            }
+
+        }
+
+    }
+
+}

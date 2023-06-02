@@ -1,0 +1,16 @@
+.custom-row {
+    @include media-breakpoint-down(lg) {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+// CORRIGE A DUPLICAÇÃO DE PADDING EM ANINHAMENTO DE CONTAINER
+
+.container-fluid {
+    .container{
+        padding: 0;
+    }
+}

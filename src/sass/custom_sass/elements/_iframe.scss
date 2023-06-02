@@ -1,0 +1,22 @@
+iframe{
+    max-width: 100%;
+}
+
+// EMBED IFRAME 
+.iframe-form-fragment {
+
+    width: 100%;
+
+    iframe {
+      width: 100%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 30px 0 80px;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+      padding: 50px 25px 80px 25px;
+    }
+
+  }

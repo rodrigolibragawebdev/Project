@@ -1,362 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head></head>
 
-  <body>
-    <header></header>
+<head></head>
 
-    <main class="py-4">
-      <!-- form section -->
-      <section class="container p-3">
-        <p class="title">Formulários</p>
-        <p class="pb-4">
-          Para funcionar a lógica, os inputs precisam de placeholder (mesmo q
-          seja um espaço em)
-        </p>
+<body>
+  <header></header>
 
-        <!-- new forms 3 columns -->
-        <div
-          class="my-2 d-flex justify-content-evenly align-items-start gap-5 flex-wrap"
-        >
-          <!-- FIRST COLUMN -->
-          <div class="col-3 d-flex flex-column gap-2">
-            <div class="pb-4">
-              <label class="form-label" for="teste">Normal</label>
-              <input
-                class="form-control"
-                type="text"
-                name="teste"
-                placeholder="Placeholder"
-              />
+  <main class="py-4">
+    <!-- form section -->
+    <section class="container p-3">
+      <p class="title">Formulários</p>
+      <p class="pb-0">
+        Para funcionar a lógica, os inputs precisam de placeholder (mesmo q
+        seja um espaço em)
+      </p>
+      <p>Label: form-label / Se input required: required</p>
+      <p>Input: form-control</p>
+
+      <!-- new forms 3 columns -->
+      <div class="my-2 d-flex justify-content-evenly align-items-start gap-5 flex-wrap">
+        <!-- FIRST COLUMN -->
+        <div class="col-3 d-flex flex-column gap-2">
+          <div class="pb-4">
+            <label class="form-label" for="teste">Normal</label>
+            <input class="form-control" type="text" name="teste" placeholder="Placeholder" />
+          </div>
+
+          <div class="pb-4">
+            <label class="form-label" for="teste">Focused</label>
+            <input class="form-control" type="text" name="teste" placeholder="Focused" autofocus="true" />
+          </div>
+
+          <div class="pb-4">
+            <label for="validationServer01" class="form-label">First name</label>
+            <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+
+          <div class="pb-4">
+            <label class="form-label" for="teste">Icon</label>
+            <input class="form-control" type="text" name="teste" placeholder="Placeholder" />
+          </div>
+
+          <div class="pb-4">
+            <label class="form-label" for="teste">Normal</label>
+            <select class="form-select" aria-label="Default select example">
+              <option value="" selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="pb-4">
+            <div>
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder=" "></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECOND COLUMN -->
+        <div class="col-3 d-flex flex-column gap-2">
+          <div class="pb-4">
+            <label class="form-label required" for="teste">Required</label>
+            <input class="form-control" type="text" name="teste" placeholder="teste" required />
+          </div>
+
+          <div class="pb-4">
+            <label class="form-label" for="teste">Typing</label>
+            <input class="form-control" type="text" name="teste" placeholder="Focused" value="Typing.." />
+          </div>
+
+          <div class="pb-4">
+            <label for="validationServer05" class="form-label">Zip</label>
+            <input type="text" class="form-control is-invalid" id="validationServer05"
+              aria-describedby="validationServer05Feedback" required />
+            <div id="validationServer05Feedback" class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+
+          <div class="pb-4">
+            <label class="form-label" for="teste">Search [??]</label>
+            <input class="form-control" type="text" name="teste" placeholder="Placeholder" />
+          </div>
+
+          <div class="pb-4">
+            <label class="form-label" for="teste">Selecting</label>
+            <select class="form-select" aria-label="Default select example">
+              <option value="" selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- THIRD COLUMN -->
+        <div class="col-3 d-flex flex-column gap-2">
+          <div class="pb-4">
+            <label class="form-label" for="teste">Disabled</label>
+            <input id="disabledInput" class="form-control" type="text" name="teste" placeholder="teste" disabled />
+          </div>
+
+          <div class="pb-4">
+            <label class="form-label" for="teste">Entered</label>
+            <input class="form-control" type="text" name="teste" placeholder="Focused" value="Entered" />
+          </div>
+
+          <div class="pb-4">
+            <label class="form-label d-block" for="teste">Tooltip: </label>
+
+            <p class="btn" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip" data-bs-title="This top tooltip is themed via CSS variables.">
+              Custom tooltip [hover-me]
+            </p>
+
+            <button type="button" class="btn-rounded bg-dark text-white" data-bs-toggle="tooltip"
+              data-bs-placement="right" data-bs-title="Tooltip on right">
+              i
+            </button>
+          </div>
+
+          <div class="pb-4">
+            <label class="form-label" for="teste">Search [??]</label>
+            <input class="form-control" type="text" name="teste" placeholder="Placeholder" />
+          </div>
+
+          <div class="pb-4">
+            <label class="form-label" for="teste">Entered</label>
+            <select class="form-select" aria-label="Default select example">
+              <option value="" selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="col-12 my-3 gap-3 d-flex justify-content-around">
+          <div class="p-2 col-5 d-flex flex-column gap-2">
+            <div>
+              <p class="subtitle">Range</p>
+              <p>bootstrap + input hack / Class: form-range / oninput=oninput="rangenumber.value=value"</p>
+              <input class="form-range" type="range" value="70" min="0" max="100" id="range"
+                oninput="rangenumber.value=value" />
             </div>
 
-            <div class="pb-4">
-              <label class="form-label" for="teste">Focused</label>
-              <input
-                class="form-control"
-                type="text"
-                name="teste"
-                placeholder="Focused"
-                autofocus="true"
-              />
-            </div>
-
-            <div class="pb-4">
-              <label for="validationServer01" class="form-label"
-                >First name</label
-              >
-              <input
-                type="text"
-                class="form-control is-valid"
-                id="validationServer01"
-                value="Mark"
-                required
-              />
-              <div class="valid-feedback">Looks good!</div>
-            </div>
-
-            <div class="pb-4">
-              <label class="form-label" for="teste">Icon</label>
-              <input
-                class="form-control"
-                type="text"
-                name="teste"
-                placeholder="Placeholder"
-              />
-            </div>
-
-            <div class="pb-4">
-              <label class="form-label" for="teste">Normal</label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-            <div class="pb-4">
-              <div>
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Example textarea</label
-                >
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                  placeholder=" "
-                ></textarea>
+            <div>
+              <p class="subtitle">Checkbox</p>
+              <p class="pb-0">Class: form-check-input</p>
+              <div class="form-check pb-0">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Default checkbox
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Checked checkbox
+                </label>
               </div>
             </div>
           </div>
 
-          <!-- SECOND COLUMN -->
-          <div class="col-3 d-flex flex-column gap-2">
-            <div class="pb-4">
-              <label class="form-label" for="teste">Required</label
-              ><span>add o icon</span>
-              <input
-                class="form-control"
-                type="text"
-                name="teste"
-                placeholder="teste"
-                required
-              />
-            </div>
-
-            <div class="pb-4">
-              <label class="form-label" for="teste">Typing</label>
-              <input
-                class="form-control"
-                type="text"
-                name="teste"
-                placeholder="Focused"
-                value="Typing.."
-              />
-            </div>
-
-            <div class="pb-4">
-              <label for="validationServer05" class="form-label">Zip</label>
-              <input
-                type="text"
-                class="form-control is-invalid"
-                id="validationServer05"
-                aria-describedby="validationServer05Feedback"
-                required
-              />
-              <div id="validationServer05Feedback" class="invalid-feedback">
-                Please provide a valid zip.
+          <div class="p-2 col-5 d-flex flex-column gap-2">
+            <div>
+              <p class="subtitle">Switches</p>
+              <p class="pb-0">Class: form-check-input / role="switch"</p>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+                <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled />
+                <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled"
+                  checked disabled />
+                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox
+                  input</label>
               </div>
             </div>
 
-            <div class="pb-4">
-              <label class="form-label" for="teste">Search [??]</label>
-              <input
-                class="form-control"
-                type="text"
-                name="teste"
-                placeholder="Placeholder"
-              />
-            </div>
+            <div>
+              <p class="subtitle">Radio</p>
+              <p class="pb-0">Class: form-check-inpu / type=radio / id: flexRadioDefault1[?] / name=flexRadioDefault[?]
+              </p>
 
-            <div class="pb-4">
-              <label class="form-label" for="teste">Selecting</label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- THIRD COLUMN -->
-          <div class="col-3 d-flex flex-column gap-2">
-            <div class="pb-4">
-              <label class="form-label" for="teste">Disabled</label>
-              <input
-                id="disabledInput"
-                class="form-control"
-                type="text"
-                name="teste"
-                placeholder="teste"
-                disabled
-              />
-            </div>
-
-            <div class="pb-4">
-              <label class="form-label" for="teste">Entered</label>
-              <input
-                class="form-control"
-                type="text"
-                name="teste"
-                placeholder="Focused"
-                value="Entered"
-              />
-            </div>
-
-            <div class="pb-4">
-              <label class="form-label" for="teste">Tooltip: </label><br />
-              <button
-                type="button"
-                class="btn-rounded bg-dark text-white"
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                data-bs-title="Tooltip on right"
-              >
-                i
-              </button>
-            </div>
-
-            <div class="pb-4">
-              <label class="form-label" for="teste">Search [??]</label>
-              <input
-                class="form-control"
-                type="text"
-                name="teste"
-                placeholder="Placeholder"
-              />
-            </div>
-
-            <div class="pb-4">
-              <label class="form-label" for="teste">Entered</label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="col-12 my-3 gap-3 d-flex justify-content-around">
-            <div class="p-2 col-5 d-flex flex-column gap-2">
-              <div>
-                <p>Range</p>
-                <p>bootstrap + input hack</p>
-                <input
-                  class="form-range"
-                  type="range"
-                  value="70"
-                  min="0"
-                  max="100"
-                  id="range"
-                  oninput="rangenumber.value=value"
-                />
+              <div class="form-check pb-0">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Default radio
+                </label>
               </div>
-
-              <div>
-                <p>Checkbox</p>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckChecked"
-                    checked
-                  />
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div class="p-2 col-5 d-flex flex-column gap-2">
-              <div>
-                <p>Switches</p>
-                <div class="form-check form-switch">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    role="switch"
-                    id="flexSwitchCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexSwitchCheckDefault"
-                    >Default switch checkbox input</label
-                  >
-                </div>
-                <div class="form-check form-switch">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    role="switch"
-                    id="flexSwitchCheckChecked"
-                    checked
-                  />
-                  <label class="form-check-label" for="flexSwitchCheckChecked"
-                    >Checked switch checkbox input</label
-                  >
-                </div>
-                <div class="form-check form-switch">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    role="switch"
-                    id="flexSwitchCheckDisabled"
-                    disabled
-                  />
-                  <label class="form-check-label" for="flexSwitchCheckDisabled"
-                    >Disabled switch checkbox input</label
-                  >
-                </div>
-                <div class="form-check form-switch">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    role="switch"
-                    id="flexSwitchCheckCheckedDisabled"
-                    checked
-                    disabled
-                  />
-                  <label
-                    class="form-check-label"
-                    for="flexSwitchCheckCheckedDisabled"
-                    >Disabled checked switch checkbox input</label
-                  >
-                </div>
-              </div>
-
-              <div>
-                <p>Radio</p>
-
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault1"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Default radio
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault2"
-                    checked
-                  />
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Default checked radio
-                  </label>
-                </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Default checked radio
+                </label>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
 
-    <footer></footer>
 
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://code.jquery.com/jquery-3.7.0.js"
-      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="forms.js"></script>
-    <script defer src="dom.js"></script>
-    <script defer src="scripts.js"></script>
-  </body>
+    </section>
+  </main>
+
+  <footer></footer>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script defer src="./scripts/forms.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <script src="./scripts/dom.js"></script>
+  <script defer src="./scripts/scripts.js"></script>
+  <script defer src="./src/js/main.js"></script>
+</body>
+
 </html>
