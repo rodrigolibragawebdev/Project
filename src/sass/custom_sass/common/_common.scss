@@ -1,4 +1,19 @@
+
+// Custom row for grid purposes
 .custom-row {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(lg) {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+// Responsive flex container
+.responsive-flex{
     @include media-breakpoint-down(lg) {
         text-align: center;
         flex-direction: column;
@@ -8,7 +23,6 @@
 }
 
 // CORRIGE A DUPLICAÇÃO DE PADDING EM ANINHAMENTO DE CONTAINER
-
 .container-fluid {
     .container{
         padding: 0;

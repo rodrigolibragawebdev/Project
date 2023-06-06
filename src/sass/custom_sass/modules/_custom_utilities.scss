@@ -1,0 +1,26 @@
+/*
+* This document add, remove or overwrite data using "Utilities API" tool from Bootstrap
+* Read more: https://getbootstrap.com/docs/5.2/utilities/api/#using-the-api
+*/
+
+$utilities: map-merge(
+  $utilities,
+  (
+
+    // Changing someting:
+    "border": map-merge(
+      map-get($utilities, "border"),
+      ( responsive: true ),
+    ),
+
+    // Add new utilities
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: auto pointer grab,
+    )
+  )
+);
+
+@import "../../bootstrap/core/utilities/api";

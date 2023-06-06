@@ -5,7 +5,7 @@ $(document).ready(function () {
   var lastScrollTop = 0;
   var breakPoint = 400;
   var navbarHeight = $("#navbar").outerHeight();
-  var window = $(window).height()
+  var window = $(window).height
 
   $(window).scroll(function () {
     var actualScrollHeight = $(this).scrollTop();

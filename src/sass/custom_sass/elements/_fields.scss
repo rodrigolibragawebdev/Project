@@ -89,10 +89,7 @@ textarea:not(:placeholder-shown) {
   color: $dark;
   font-weight: bold;
   border-color: $dark;
-}
 
-select::-ms-expand {
-  display: none; /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
 }
 
 .form-select:focus {
@@ -100,6 +97,9 @@ select::-ms-expand {
   // font-weight: bold;
 }
 
+input[type="radio"] {
+  border: 5px solid red;
+}
 
 // CHECKBOX + SWITCHES
 
@@ -168,8 +168,4 @@ select::-ms-expand {
     content: '';
     color: $danger;
   }
-}
-
-option {
-  font-weight: normal !important;
 }
