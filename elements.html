@@ -16,10 +16,10 @@
         <p class="title">Elementos</p>
 
         <!-- btns -->
-        <div class="row d-flex justify-content-around">
+        <div class="row d-flex justify-content-around bg-white border border-primary rounded my-1">
 
           <!-- btns normais -->
-          <div class="col-md-5 g-1 d-flex flex-column gap-1 mt-4">
+          <div class="col-md-5 g-1 d-flex flex-column gap-1 my-3">
 
             <p class="title">Botões</p>
             <p>class="btn + [btn-value]"</p>
@@ -36,7 +36,9 @@
               <button type="button" class="btn btn-danger">Danger</button>
               <button type="button" class="btn btn-warning">Warning</button>
               <button type="button" class="btn btn-info">Info</button>
-              <button type="button" class="btn btn-light">Light</button>
+              <div class="p-1 bg-dark rounded">
+                <button type="button" class="btn btn-light w-100">Light</button>
+              </div>
               <button type="button" class="btn btn-dark">
                 <img class="icon-16" src="/assets/icon/Calendário-16px-FFFFFF.svg" alt="" />
                 Dark
@@ -63,7 +65,10 @@
                 OutlineWarning
               </button>
               <button type="button" class="btn btn-outline-info">Outline Info</button>
-              <button type="button" class="btn btn-outline-light">Outline Light</button>
+              <div class="p-1 bg-dark rounded">
+                <button type="button" class="btn btn-outline-light w-100">Outline Light</button>
+              </div>
+
               <button type="button" class="btn btn-outline-dark">Outline Dark</button>
             </div>
 
@@ -172,50 +177,72 @@
 
           </div>
 
-          <div class="row my-3">
-            <p class="subtitle">Dropdown</p>
+        </div>
 
-            <div class="d-flex">
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                  aria-expanded="false" data-bs-offset="10,20">
-                  Dropdown button
-                </button>
-                <div class="drop-menu-mobile dropdown-menu">
-                  <div class="triang"></div>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </div>
+        <div class="row my-3 d-flex flex-column gap-1">
+          <p class="title">Dropdown</p>
+          <div class="d-flex">
+            <div class="dropdown">
+              <button class=" bg-light border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false" data-bs-offset="10,20">
+                Hover ME
+              </button>
+              <div class="drop-menu-mobile dropdown-menu">
+                <div class="triang"></div>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="row my-3">
-            <p class="subtitle">tooltip</p>
+        <div class="row my-3 d-flex flex-column gap-1">
+          <p class="title">Tooltip</p>
 
-            <div class="d-flex">
-              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
-                data-bs-title="Tooltip on top">
-                Tooltip on top
-              </button>
-              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
-                data-bs-title="Tooltip on right">
-                Tooltip on right
-              </button>
-              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                data-bs-title="Tooltip on bottom">
-                Tooltip on bottom
-              </button>
-              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
-                data-bs-title="Tooltip on left">
-                Tooltip on left
-              </button>
+          <div class="d-flex justify-content-start gap-2">
 
-            </div>
+            <p class=" p-2 color-child" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+              Tooltip on top
+            </p>
+
+            <p class=" p-2 color-child" data-bs-toggle="tooltip" data-bs-placement="right"
+              data-bs-title="Tooltip on right">
+              Tooltip on right
+            </p>
+
+            <p class=" p-2 color-child" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              data-bs-title="Tooltip on bottom">
+              Tooltip on bottom
+            </p>
+            <p class=" p-2 color-child" data-bs-toggle="tooltip" data-bs-placement="left"
+              data-bs-title="Tooltip on left">
+              Tooltip on left
+            </p>
+
+          </div>
+
+          <div>
+            <p><strong>class="d-inline" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-title="Tooltip on top"</strong></p>
+            <p><strong>class="d-inline" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-title="Tooltip on right"</strong></p>
+            <p><strong>class="d-inline" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Tooltip on bottom"</strong></p>
+            <p><strong>class="d-inline" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Tooltip on left"</strong></p>
+
+            <small>não esquecer do script:</small> <b></b>
+            <code>$(document).ready(function(){
+              $('[data-bs-toggle="tooltip"]').tooltip() // to enable tooltips, with default configuration
+          })
+          </code>
           </div>
 
         </div>
+
+
+
 
 
 
@@ -230,7 +257,8 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-    crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
   <script src="./scripts/dom.js"></script>
   <script defer src="./scripts/scripts.js"></script>

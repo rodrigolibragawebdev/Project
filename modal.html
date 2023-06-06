@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+  <header></header>
+
+  <main>
+
+    <div class="flex-column d-flex d-column justify-content-center align-items-center">
+
+      <section class="container p-2 m-2 text-start">
+      
+        <div class="row d-flex justify-content-start flex-wrap flex-column gap-1">
+
+          <p class="title">Modais</p>
+          <p>Clique no botão para ver o seu funcionamento</p>
+          <p>Importante: data-bs-target do botão precisa ser o mesmo do id do modal</p>
+          <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/modal/#how-it-works" aria-label="Link to Bootstrap Modal information" title="Bootstrap 5.2"><p>Saiba mais</p></a>
+
+
+          
+          <code>
+
+            <strong>Ativador:</strong> <br>
+          &ltbutton type="button" class="btn btn-primary" data-bs-toggle="modal" <strong>data-bs-target="#exampleModal"</strong>&gt
+  Launch demo modal
+          &lt/button&gt <br>
+
+          <br>
+
+
+          &ltdiv class="modal fade" <strong>id="exampleModal"</strong> tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt <br>
+           <strong><p>Adicionar variações aqui:</p></strong>
+          &ltdiv class="modal-dialog"&gt <br>
+              &ltdiv class="modal-content"&gt <br>
+              <strong><p>Header:</p></strong>
+                &ltdiv class="modal-header"&gt <br>
+                  &lth1 class="modal-title fs-5" id="exampleModalLabel"&gtModal title&lt/h1&gt <br>
+                  &ltbutton type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt&lt/button&gt <br>
+                &lt/div&gt <br>
+                <strong><p>Body:</p></strong>
+                &ltdiv class="modal-body"&gt <br>
+                  ... <br>
+                &lt/div&gt <br>
+                <strong><p>Footer:</p></strong>
+                &ltdiv class="modal-footer"&gt <br>
+                  &ltbutton type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gtClose&lt/button&gt <br>
+                  &ltbutton type="button" class="btn btn-primary"&gtSave changes&lt/button&gt <br>
+                &lt/div&gt <br> ...
+      
+
+        </code>
+
+          <div class="pt-2 d-flex flex-column align-items-start justify-content-center flex-wrap gap-1">
+
+            <p class="subtitle">Default</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary w-25" data-bs-toggle="modal" data-bs-target="#same_id">
+              Ativar
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="same_id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xs">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="subtitle">Static backdrop</p>
+            <p>Não rola o fundo</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary  w-25" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Ativar
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <p class="subtitle">Toggle</p>
+
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+              tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Show a second modal and hide this one with the button below.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                      second modal</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+              aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Hide this modal and show the first with the button below.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                      first</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary w-25" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Ativar
+              primeiro modal</a>
+
+            <p class="subtitle">Customizando o tamanho:</p>
+            <p>.modal-sm <br> .modal-lg <br> modal-xl <br></p>
+
+            <p>
+              class="modal-dialog modal-xl">... <br>
+              class="modal-dialog modal-lg">... <br>
+              class="modal-dialog modal-sm">... <br>
+            </p>
+
+            <button type="button" class="btn btn-primary w-25" data-bs-toggle="modal" data-bs-target="#modal-xl">
+              MODAL XL
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-xl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary w-25" data-bs-toggle="modal" data-bs-target="#modal-sm">
+              MODAL SM
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-sm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="subtitle">Modal-fullscreen</p>
+            <p>.modal-fullscreen / .modal-fullscreen-md-down (e assim por diante)</p>
+            <p>Torna ABAIXO, sem considerar ele próprio, FULL SCREEN:</p>
+
+
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary w-25" data-bs-toggle="modal" data-bs-target="#modal-fs">
+              FS ABAIXO DE LG
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-fs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen-lg-down">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer></footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <script src="./scripts/dom.js"></script>
+</body>
+
+</html>
+

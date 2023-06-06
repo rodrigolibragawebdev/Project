@@ -24,27 +24,19 @@
           <!-- content here -->
           <div class="information d-flex flex-column">
             <div class="row mb-5">
-              <div class="col-md-5">
+              <div>
                 <p class="title">Informações</p>
-                <p>Extra small (xs)</p>
-                <p>Small (sm)</p>
-                <p>Medium (md)</p>
-                <p>Large (lg)</p>
-                <p>Extra large (xl)</p>
-                <p>Extra extra large (xxl)</p>
+                <div class="pt-3 d-flex gap-2 justify-content-center">
+                  <p>Extra small (xs)</p>
+                  <p>Small (sm)</p>
+                  <p>Medium (md)</p>
+                  <p>Large (lg)</p>
+                  <p>Extra large (xl)</p>
+                  <p>Extra extra large (xxl)</p>
+                </div>
+           
               </div>
               <div class="col-md-7">
-
-                <code>
-                    $grid-breakpoints: 
-                    <br />xs: 0, <br />sm: 540px, <br />md: 540px, <br />lg:
-                    1100px, <br />xl: 4000px, <br />xxl: 5000px <br />
-                    ;
-
-                    <br />
-                    <br />// Grid containers <br />$container-max-widths: 
-                    <br />sm: 540px, <br />md: 1100px, <br />lg: 1200px, <br />xl:
-                    4000px, <br />xxl: 5000px <br> </code>
               </div>
             </div>
 
@@ -52,30 +44,32 @@
               <table class="table mb-4">
                 <thead>
                   <tr>
-                    <th scope="col"></th>
+                    <th scope="col">
+                      breakpoints
+                    </th>
                     <th scope="col">
                       xs<br />
-                      <span class="fw-normal">&lt;576px</span>
+                      <span class="fw-normal">&ge;0</span>
                     </th>
                     <th scope="col">
                       sm<br />
-                      <span class="fw-normal">&ge;576px</span>
+                      <span class="fw-normal">&ge;280px</span>
                     </th>
                     <th scope="col">
                       md<br />
-                      <span class="fw-normal">&ge;768px</span>
+                      <span class="fw-normal">&ge;540px</span>
                     </th>
                     <th scope="col">
                       lg<br />
-                      <span class="fw-normal">&ge;992px</span>
+                      <span class="fw-normal">&ge;1100px</span>
                     </th>
                     <th scope="col">
                       xl<br />
-                      <span class="fw-normal">&ge;1200px</span>
+                      <span class="fw-normal">&ge;2560px</span>
                     </th>
                     <th scope="col">
                       xxl<br />
-                      <span class="fw-normal">&ge;2300px</span>
+                      <span class="fw-normal">&ge;5000px</span>
                     </th>
                   </tr>
                 </thead>
@@ -86,10 +80,10 @@
                     </th>
                     <td>None (auto)</td>
                     <td>540px</td>
-                    <td>720px</td>
-                    <td>960px</td>
+                    <td>1100px</td>
                     <td>1200px</td>
-                    <td>2300px</td>
+                    <td>4000px</td>
+                    <td>5000px</td>
                   </tr>
                   <tr>
                     <th class="text-nowrap" scope="row">Class prefix</th>
@@ -128,8 +122,7 @@
 
         <p class="title">Grids</p>
         <p class="subtitle">Padding, gap e margin</p>
-        [letra] = 10px, [letra-1] = 20px ... sempre somando 10px
-        <p><strong>0 = 10px, 1 = 20px, 2 = 30px, 3 = 40px, 4 = 50px, 5 = 60px</strong></p>
+        <p><strong>0 = 0 / 1 = 10px / 2 = 20px / 3 = 30px / 4 = 40px / 4 = 50px / 6 = 60px</strong></p>
         <p>p e m = padding e margin</p>
         <p>t = top, b = bottom, s = start, e = end, x = left+right, y = top+bottom, blank = tudo</p>
         <p> responsividade: adicionar me-lg-3 faz com que tenha 3 somente de lg pra cima, e sucessivamente</p>
@@ -170,18 +163,20 @@
         </div>
 
         <p class="subtitle">Columns with gutter</p>
-        <div class="row d-flex gap-0 mb-5">
+        <p>A div par tem um class ROW (d-flex + wrap)</p>
+        <div class="row mb-5">
           <div class="color col-1 text-white">col-1</div>
-          <div class="color col-1 text-white">col-1</div>
-          <div class="color col-1 text-white">col-1</div>
-          <div class="color col-1 text-white">col-1</div>
-          <div class="color col-1 text-white">col-1</div>
-          <div class="color col-1 text-white">col-1</div>
-          <div class="color col-1 text-white">col-1</div>
-          <div class="color col-1 text-white">col-1</div>
-          <div class="color col-1 text-white">col-1</div>
-          <div class="color col-1 text-white">col-1</div>
-          <div class="color col-1 text-white">col-1</div>
+          <div class="color col-1 text-white">col-2</div>
+          <div class="color col-1 text-white">col-3</div>
+          <div class="color col-1 text-white">col-4</div>
+          <div class="color col-1 text-white">col-5</div>
+          <div class="color col-1 text-white">col-6</div>
+          <div class="color col-1 text-white">col-7</div>
+          <div class="color col-1 text-white">col-8</div>
+          <div class="color col-1 text-white">col-9</div>
+          <div class="color col-1 text-white">col-10</div>
+          <div class="color col-1 text-white">col-11</div>
+          <div class="color col-1 text-white">col-12</div>
         </div>
 
         <p class="subtitle">Columns custom width</p>
@@ -224,6 +219,61 @@
           <div class="color col-md-4 text-white">col-md-4</div>
           <p>*vira full no tablet (md)</p>
         </div>
+
+        <p class="subtitle">Usando Gutters</p>
+        <p><strong>importante: as columns são usadas SOMENTE para divisão! -> INSERIR O CONTENT EM OUTRA DIV</strong></p>
+        <div class="mt-2 text-center">
+          <small>usar uma row, dividida em 6 columns <strong>gy-5</strong></small>
+          <div class="row gy-5">
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2 text-center">
+          <small>usar uma row, dividida em 6 columns <strong>gx-5</strong></small>
+          <div class="row gx-5">
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2 text-center">
+          <small>usar uma row, dividida em 6 columns <strong>g-5</strong></small>
+          <div class="row g-5">
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+          </div>
+        </div>
+
       </section>
     </div>
 

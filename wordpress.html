@@ -9,128 +9,123 @@
 
   <main>
 
-    <div class="flex-column d-flex d-column align-items-center">
-      <section class="container m-2 p-2 text-start">
+    <div class="d-flex flex-column align-items-center">
 
-        <div class="row d-flex flex-column gap-2">
-          <p class="title">Documentação geral WordPress</p>
-          <p>Linguagem principal: PHP 8</p>
-          <p>Linguagem de eventos: JavaScript e Jquery</p>
-          <p>Marcação e estilização: HTML5, CSS3, SASS</p>
-          <p>Framework CSS: Bootstrap 5.2 [theming] </p>
-          <p>Compiladores: GULP</p>
-          <div>
-            <code></code><span> - </span>
+      <div
+            class="container bg-primary text-white border border-white rounded p-2 d-flex flex-column justify-content-start gap-2">
+            <p class="title">Documentação geral WordPress</p>
+            <p>Linguagem principal: PHP 8.1</p>
+            <p>Linguagem de eventos: JavaScript e Jquery</p>
+            <p>Marcação e estilização: HTML5, CSS3, SASS</p>
+            <p>Framework CSS: Bootstrap 5.2 [theming] </p>
+            <p>Compiladores: GULP</p>
+          </div>
+
+      <section class="container m-2 p-2">
+
+        <div class="row text-start">
+
+          <div class="my-2 d-flex flex-column gap-2">
+
             <p class="subtitle">Declarações - Boas práticas</p>
-
-            <strong>
-              <p>Variáveis</p>
-            </strong>
-            <code>$var_name</code> <span> - underscore/underline</span>
-
-            <strong>
-              <p>Classes e ids</p>
-            </strong>
-            <code>my-class</code><span> - hífen </span>
-
-            <strong>
-              <p>Construção de classes c/bootstrap</p>
-            </strong>
-            <code>  class="[container / img][row / col, padding e margin][display + variações][gaps][cores][outras classes bootstrap][custom-class]" </code>
-            <br>
-            <code> example:  class="row py-3 my-3 d-flex flex-column justifi-content-center gap-3 bg-primary nav-link custom-class-forcss" </code>
-            
-            <br>
-
-            <small>** se possível nomear as classes com contexto... exemplo: se é uma classe do footer, que aninha ícones sociais, nomear: <strong>footer-social-links-div</strong> <br> evitando usar nomes de classes já utilizados no bootstrap</small>
-
-            <strong>
-              <p>Loops</p>
-            </strong>
-            <code> if(): endif; while(): endwhile; foreach(): endforeach;</code>
-
-            <strong>
-              <p>Requisições WP</p>
-            </strong>
-            <p class="pb-2"> Fazer as requisições no início do arquivo para reutilizar durante a construção do html</p>
-          
 
             <div>
               <strong>
-                <p>Esturturas de pastas wordpress</p>
+                <p>Variáveis</p>
               </strong>
-              <p>Template parts:</p>
-              <code>
-                <p> template-parts
-                <p> - custom-parts
-                <p> -- block 
-                <p> -- content
-                <p> -- navigation [?]
-                <p> - exceptions 
-                <p> - footer 
-                <p> - header
-              </code>
-              <p class="text-sm">Cada block pode ter 1 ou mais contents, <br>Cada página principal pode ter um ou mais blocos</p>
-              <br>
-
-              <p>pasta SRC:</p>
-              <code>
-                <p> src </p>
-                <p> - fonts </p>
-                <p> -- [custom font folder]</p>
-                <p>  - imagens </p>
-                <p> -- [custom image folder]</p>
-                <p> - js </p>
-                <p> -- bootstrap</p>
-                <p> -- (files)</p>
-                <p> - sass </p>
-                <p> -- bootstrap</p>
-                <p>  --- core [substituir sempre que houver alteração nos componentes padronizados]</p>
-                <p>  --- (theming_css) - enfileirados</p>
-                <p>  --- (theming.scss) - usado para compilação</p>
-                <p> -- custom_css [enfileirados em functions.php]</p>
-                <p> -- custom_sass</p>
-                <p> --- common</p>
-                <p>  --- elements</p>
-                <p> --- modules</p>
-                <p>  --- site [?]</p>
-                <p>  --- (custom.scss) - ele importa todas as pastas acima e depois é importando em theming.scss para compilação - pode ser alterado para diferentes temas</p>
-                <p> -- pages_css [enfileirados em functions.php]</p>
-                <p>  -- pages_sass</p>
-                <p>  --- (custom pages scss go here)</p> 
-               </code>
+              <code>$var_name</code> <span> - underscore/underline</span>
             </div>
 
-            <strong>
-              <p>Comentários</p>
-            </strong>
-            <p>Após o encerramento de uma tag longa</p>
-            <p>
-              < /div> <code>< !-- end of []-- ></code>
-            </p>
+            <div>
+              <strong>
+                <p>Classes e IDS - BEM (bloco, element, modifier)</p>
+              </strong>
+              <code>[block]__[element]--[modifier]</code><span> - hífen </span>
+            </div>
 
-            <strong><p>Dependências de desenvolvimento (node modules) - package.json</p></strong>
-            <code>  
-              <p>"devDependencies": {</p> 
-              <p>"gulp": "^4.0.2",</p> 
-              <p>"gulp-sass": "^5.1.0",</p>
-              <p>"node-sass": "^8.0.0",</p>
-              <p>"sass": "^1.62.1"</p>
-       
-            },</code>
+            <div>
+              <strong>
+                <p>Construção de classes c/bootstrap</p>
+              </strong>
+              <code>  
+                class = <br>
+                [container / img]<br>
+                [row / col, padding e margin + grid]<br>
+                [display + variações]<br>
+                [gaps]<br>
+                [cores]<br>
+                [outras classes bootstrap]<br>
+                [custom-class BEM]<br>
+              </code>
+              <br>
+              <code> example:  class="row py-3 my-3 d-flex flex-column justifi-content-center gap-3 bg-primary nav-link header__nav--mobile" 
+              </code>
+              <br>
+            </div>
+
+            <!-- Loops -->
+            <div class="d-flex flex-column gap-1">
+              <strong>
+                <p>Loops</p>
+              </strong>
+              <p>Básicos php:</p>
+              <code> if(): endif; while(): endwhile; foreach(): endforeach;</code>
+              <p>ACF LOOPS</p>
+              <a target="_blank" href="https://www.advancedcustomfields.com/resources/repeater/">Go to</a>
+              <small>*Basic loop / Display a slider / Foreach Loop / Nested loops / Accessing first row values / Accessing random row values</small>
+              <p>Loops WordPress</p>
+              <code>
+                &lt?php <br>
+                if ( have_posts() ) : <br>
+                  while ( have_posts() ) : <br>
+                    the_post();  <br>
+                    // <br>
+                    // Post Content here <br>
+                    // <br>
+                   endwhile; <br>
+                 endif; <br>
+                ?&gt <br>
+              </code>
+            </div>
+
+            <div>
+              <strong>
+                <p>Requisições WP</p>
+              </strong>
+              <p> Fazer as requisições no início do arquivo para reutilizar durante a construção do html
+              </p>
+            </div>
+
+            <div>
+              <strong>
+                <p>Dependências de desenvolvimento (node modules) - package.json</p>
+              </strong>
+              <code>
+
+                        <p>"gulp": "^4.0.2",</p> 
+                        <p>"gulp-sass": "^5.1.0",</p>
+                        <p>"node-sass": "^8.0.0",</p>
+                        <p>"sass": "^1.62.1"</p>
+                 
+              </code>
+            </div>
+
 
           </div>
+
         </div>
 
       </section>
+
     </div>
+
   </main>
 
   <footer></footer>
 
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
-    <script src="./scripts/dom.js"></script>
+  <script src="./scripts/dom.js"></script>
 </body>
 
 </html>
